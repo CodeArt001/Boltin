@@ -1,0 +1,107 @@
+import paull from "../../assets/images/paul.png";
+import chatBox from "../../assets/images/chat.png";
+import { SlArrowUp, SlArrowDown } from "react-icons/sl";
+import { useState } from "react";
+import Passwordsuccsseful from "./Passwordsuccsseful";
+
+const Accountsecurity = () => {
+  const [enterPassword, SetEnterPasswprd] = useState(false);
+  const [comfirmPassword, SetComfirmPassword] = useState(false);
+  const [passwordSuccessfull, SetPasswordSuccessful] = useState(false);
+  const handleEnter = () => {
+    SetEnterPasswprd(!enterPassword);
+  };
+  const handleComfirm = () => {
+    SetComfirmPassword(true);
+  };
+  const handleSuccessful = () => {
+    SetPasswordSuccessful(!passwordSuccessfull);
+  };
+  //   if (passwordSuccessfull) {
+  //     return <Passwordsuccsseful />;
+  //   }
+  return (
+    <div className="flex justify-center">
+      <div className="relative flex  justify-between items-center text-white relative ">
+        <div></div>
+
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col py-3 items-center justify-center">
+            <img src={paull} alt="" />
+            <p>Paul</p>
+          </div>
+          <div className="flex flex-col text-white relative items-center">
+            <div className=" text-white border border-white rounded-lg py-3 lg:w-[25rem] w-[23rem] md:w-[45rem]  pl-3">
+              Change Password
+            </div>
+            {/* <input
+              type=""
+              placeholder="Change Password"
+              className="placeholder:text-white border border-white rounded-lg py-3 lg:w-[25rem] w-[23rem] md:w-[45rem]  pl-3 "
+            /> */}
+
+            <div
+              onClick={() => handleEnter()}
+              className="absolute right-4 top-5 cursor-pointer text-white"
+            >
+              {enterPassword ? (
+                <SlArrowUp className="text-white" />
+              ) : (
+                <SlArrowDown />
+              )}
+            </div>
+
+            {enterPassword && (
+              <div className="py-5 flex flex-col justify-center items-center ">
+                <div className="text-white border border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem]">
+                  Enter last password
+                </div>
+                {/* <input
+                  type="text"
+                  placeholder="Enter last password"
+                  className="placeholder:text-white text-white border border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem] "
+                /> */}
+                {!comfirmPassword && (
+                  <button
+                    onClick={() => handleComfirm()}
+                    className="bg-[#6C5CE7] hover:bg-[#6C5CE7] text-white px-6 py-2 rounded  mt-2"
+                  >
+                    Next
+                  </button>
+                )}
+
+                {comfirmPassword && (
+                  <div className="flex flex-col items-center gap-2">
+                    <div className=" mt-3 text-white border border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem] ">
+                      Comfirm new passworld
+                      <div />
+                    </div>
+                    <button
+                      onClick={handleSuccessful}
+                      className="bg-[#6C5CE7] hover:bg-[#6C5CE7] text-white px-14 py-2 rounded  mt-2"
+                    >
+                      Comfirm
+                    </button>
+                  </div>
+                )}
+
+                {passwordSuccessfull && (
+                  <div className="absolute -top-[2rem]   flex items-center justify-center z-50">
+                    <Passwordsuccsseful />
+                  </div>
+                )}
+                <p className="text-white">Try another way</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+      <div className="absolute -bottom-40 right-8 flex flex-col items-center ">
+        <img src={chatBox} alt="chat" />
+        <p className="text-white">chatBox</p>
+      </div>
+    </div>
+  );
+};
+
+export default Accountsecurity;
