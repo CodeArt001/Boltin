@@ -11,95 +11,305 @@ const Transferhistory = () => {
       </div>
       <div className="mt-4 md:mt-18 lg:mt-4 lg:px-0 md:px-5 lg:pr-14">
         <div className="hidden md:block overflow-x-auto">
-          <table className="border border-collapse text-black dark:text-white w-full h-60  ">
-            <tr className="border border-black dark:border-white ">
-              <th className="border border-black dark:border-white px-4 ">
+          <table className="border-[#CDE4DA] border-collapse text-black dark:text-white w-full h-60">
+            <tr className="border border-[#CDE4DA] dark:border-white bg-[#EAF4F0]">
+              <th className="border border-[#CDE4DA] dark:border-white px-4 py-3">
                 S/N
               </th>
-              <th className="border border-black dark:border-white px-4">
+              <th className="border border-[#CDE4DA] dark:border-white px-4 py-3">
                 Device
               </th>
-              <th className="border border-black dark:border-white px-4">
+              <th className="border border-[#CDE4DA] dark:border-white px-4 py-3">
                 Status
               </th>
-              <th className="border border-black dark:border-white px-4">
+              <th className="border border-[#CDE4DA] dark:border-white px-4 py-3">
                 From
               </th>
-              <th className="borderborder-black dark:border-white px-4">To</th>
-              <th className="border border-black dark:border-white px-4">
+              <th className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                To
+              </th>
+              <th className="border border-[#CDE4DA] dark:border-white px-4 py-3">
                 Date
               </th>
             </tr>
-            <tr className="border border-black dark:border-white text-center">
-              <td className="border border-black dark:border-white px-4">01</td>
-              <td className="border border-black dark:border-white px-4">
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Sony 224
               </td>
-              <td className="border border-black dark:border-white px-4 text-yellow-400">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-yellow-400">
                 Pending
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Paul
               </td>
-              <td className="border border-black dark:border-whitepx-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Noah
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 31/07/2024
               </td>
             </tr>
             <tr className="border border-white text-center">
-              <td className="border border-black dark:border-white px-4">01</td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Sony 224
               </td>
-              <td className="border border-black dark:border-white px-4 text-red-600">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-red-600">
                 {" "}
                 Rejected
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Paul
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Noah
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 31/07/2024
               </td>
             </tr>
-            <tr className="border border-black dark:border-white text-center">
-              <td className="border border-black dark:border-white px-4">01</td>
-              <td className="border border-black dark:border-white px-4">
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
                 Sony 224
               </td>
-              <td className="border border-black dark:border-white px-4 text-yellow-400">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-yellow-400">
                 Pending
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Paul
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Noah
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 31/07/2024
               </td>
             </tr>
-            <tr className="border border-black dark:border-white text-center">
-              <td className="border border-black dark:border-white px-4">01</td>
-              <td className="border border-black dark:border-white px-4">
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Sony 224
               </td>
-              <td className="border border-black dark:border-white px-4 text-green-600">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
                 Accepted
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Paul
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 Noah
               </td>
-              <td className="border border-black dark:border-white px-4">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3 ">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                31/07/2024
+              </td>
+            </tr>
+            <tr className="border border-[#CDE4DA] dark:border-white text-center">
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                01
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 text-green-600">
+                Accepted
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4 py-3 ">
+                Noah
+              </td>
+              <td className="border border-[#CDE4DA] dark:border-white px-4">
                 31/07/2024
               </td>
             </tr>
@@ -109,9 +319,9 @@ const Transferhistory = () => {
           {[1, 2, 3].map((item) => (
             <div
               key={item}
-              className="border border-black dark:border-white p-4 rounded-lg text-white bg-white dark:zinc-900"
+              className="border border-[#CDE4DA] dark:border-white p-4 rounded-lg text-white bg-white dark:zinc-900"
             >
-              <div className="flex jwhiteustify-between border-b border-gray-700 pb-2 mb-2">
+              <div className="flex justify-between border-b border-gray-700 pb-2 mb-2">
                 <span className="font-bold">Device:</span>
                 <span>Sony 224</span>
               </div>

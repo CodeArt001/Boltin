@@ -67,45 +67,54 @@ const Editprofile = () => {
               />
             </svg>
           </button>
-          <div className="text-black dark:text-white flex flex-col gap-3 ">
+          <div className="text-black dark:text-white flex flex-col gap-3 mt-5">
             <div className="flex flex-col gap-2">
-              <label htmlFor="">User ID</label>
+              {/* <label htmlFor="">User ID: Pau</label> */}
               <input
                 type="text"
-                placeholder="enter ID"
-                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-black dark:border-white lg:w-[25rem] w-[23rem] md:w-[45rem] pl-3"
+                placeholder="enter ID: Paul"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg  shadow shadow-black/30 dark:border-white lg:w-[25rem] w-[23rem] md:w-[45rem] pl-3"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="">Email address</label>
+              {/* <label htmlFor="">Email address</label> */}
               <input
                 type="text"
-                placeholder="paul@gmail.com"
-                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-black dark:border-white pl-3"
+                placeholder="Email address: paul@gmail.com"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg  shadow shadow-black/30 dark:border-white pl-3"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="">Phone Number</label>
+              {/* <label htmlFor="">Phone Number</label> */}
               <input
                 type="text"
-                placeholder="0802-222-222"
-                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-blac pl-3"
+                placeholder="phone number: 0802-222-222"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg  shadow shadow-black/30 dark:border-white pl-3"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="">Location</label>
+              {/* <label htmlFor="">Phone Number</label> */}
               <input
                 type="text"
-                placeholder=""
-                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-black dark:border-white pl-3"
+                placeholder="primary address: 123 street, city, country"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg  shadow shadow-black/30 dark:border-white pl-3"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="">Portfolio</label>
+              {/* <label htmlFor="">Phone Number</label> */}
               <input
                 type="text"
-                placeholder=""
-                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-black dark:border-white pl-3"
+                placeholder="secondary address: "
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg  shadow shadow-black/30 dark:border-white pl-3"
+              />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              {/* <label htmlFor="">Portfolio</label> */}
+              <input
+                type="text"
+                placeholder="Portfolio link"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg  shadow shadow-black/30 dark:border-white pl-3"
               />
             </div>
           </div>

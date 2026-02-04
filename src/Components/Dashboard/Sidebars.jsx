@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Line from "../paragraphs/line";
 import Logout from "../Buttons/Logout";
 import { MdGridView } from "react-icons/md";
-// import device from "../../assets/images/TV.png";
 import { MdOutlineDevices } from "react-icons/md";
 import { TbDeviceDesktopPlus } from "react-icons/tb";
 import { FiAlertTriangle } from "react-icons/fi";
@@ -51,7 +50,7 @@ const Sidebars = () => {
   ];
 
   const chatSection = [
-    { id: 1, icon: <CgProfile />, name: "Profile", to: "/profile" },
+    { id: 1, icon: <CgProfile />, name: "Profile", to: "profile-info/edit" },
     {
       id: 2,
       icon: <LuHistory />,
