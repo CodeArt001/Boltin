@@ -14,7 +14,7 @@ import Missingupload from "./Components/DeclareMissing/Missingupload";
 import Missingaction from "./Components/DeclareMissing/Missingaction";
 import Stolen from "./Components/DeclareStolen/Stolen";
 import Stolenupload from "./Components/DeclareStolen/Stolenupload";
-import Stolenaction from "./Components/Declarestolen/Stolenaction";
+import Stolenaction from "./Components/DeclareStolen/Stolenaction";
 import Ownership from "./Components/Ownership/Ownership";
 import Uploadownership from "./Components/Ownership/Uploadownership";
 import Complete from "./Components/Ownership/Complete";
@@ -27,7 +27,6 @@ import { Suspense } from "react";
 import DashboardLoadingSkeleton from "./Components/Dashboard/DashboardLoadingSkeleton";
 import Chatbot from "./Components/ChatBox/Chatbot";
 import Transferhistory from "./Components/Ownership/Transferhistory";
-import Featurecard from "./Components/paragraphs/Featurecard";
 
 function App() {
   const location = useLocation();
