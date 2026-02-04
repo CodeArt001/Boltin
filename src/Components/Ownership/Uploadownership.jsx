@@ -25,15 +25,15 @@ const Uploadownership = () => {
     },
   ];
   return (
-    <div className="bg-black h-full w-full  lg:pl-6  ">
-      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2">
+    <div className="bg-white text-black dark:bg-black dark:text-white h-full w-full lg:pl-6">
+      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow shadow-black/30 mt-2">
         <Dashboardbar
           text="Transfer Onwership"
           textClassName="md:text-[1.8rem]"
         />
       </div>
       <div className="lg:w-[35%] sm:w-full w-full lg:mt-10 mt-3 flex flex-col place-self-center py-5 md:mt-13 md:px-3">
-        <div className="border border-white px-6 py-10 text-white rounded-2xl ">
+        <div className="border border-black dark:border-white px-6 py-10 text-black dark:text-white rounded-2xl ">
           {uploadMissing.map((mis, index) => (
             <div
               onClick={() => setSelectedDevice(mis)}
@@ -49,28 +49,28 @@ const Uploadownership = () => {
           ))}
         </div>
 
-        <div className="flex flex-col gap-2 text-white py-2">
+        <div className="flex flex-col gap-2  py-2">
           <label htmlFor="">Current Owner</label>
           <input
             type="text"
             placeholder="paul"
-            className="placeholder:text-white border border-white rounded-2xl py-2 pl-2"
+            className="placeholder:text-black border border-black dark:placeholder:text-white dark:border-white rounded-2xl py-2 pl-2"
           />
         </div>
-        <div className="flex flex-col gap-2 text-white">
+        <div className="flex flex-col gap-2 ">
           <label htmlFor="">New Owner Id</label>
           <input
             type="text"
             placeholder="enter new owner user id"
-            className="placeholder:text-white border border-white rounded-2xl py-2 pl-2"
+            className="placeholder:text-black border border-black dark:placeholder:text-white dark:border-white rounded-2xl py-2 pl-2"
           />
         </div>
-        <div className="flex flex-col gap-2 text-white py-2">
+        <div className="flex flex-col gap-2  py-2">
           <label htmlFor="">Reason for Transfer</label>
           <input
             type="text"
             placeholder="enter reason "
-            className="placeholder:text-white  border-white py-2 pl-2 border rounded-lg"
+            className="placeholder:text-black border border-black dark:placeholder:text-white dark:border-white py-2 pl-2 border rounded-lg"
           />
         </div>
         <div className="flex flex-col gap-2 text-white">
@@ -78,7 +78,7 @@ const Uploadownership = () => {
           <input
             type="text"
             placeholder="enter date "
-            className="placeholder:text-white  border-white py-2 pl-2 border rounded-lg"
+            className="placeholder:text-black border border-black dark:placeholder:text-white dark:border-white py-2 pl-2 border rounded-lg"
           />
         </div>
         <Upload text="Upload Supporting Doc (Optional)" uploadwidth="full" />

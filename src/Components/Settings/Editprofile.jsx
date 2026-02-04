@@ -15,15 +15,15 @@ const Editprofile = () => {
   };
 
   return (
-    <div className="flex w-full justify-center">
-      <div className="flex justify-between items-center bg-black h-full relative">
+    <div className="flex w-full sm:w-full justify-center">
+      <div className="flex justify-between items-center bg-white dark:bg-black text-black dark:text-white h-full relative">
         <div></div>
-        <div className="flex flex-col items-center text-white ">
+        <div className="flex flex-col items-center ">
           <div className="relative">
             <img src={profileImage} alt="" />
             <button
               onClick={() => fileInputRef.current.click()}
-              className="absolute bottom-0 right-0 flex items-center gap-2 mt-2 text-gray-400 hover:text-white transition-colors"
+              className="absolute bottom-0 right-0 flex items-center gap-2 mt-2 text-black dark:text-white hover:text-white transition-colors"
             >
               <span>Edit Info</span>
               <svg
@@ -67,13 +67,13 @@ const Editprofile = () => {
               />
             </svg>
           </button>
-          <div className="text-white flex flex-col gap-3 ">
+          <div className="text-black dark:text-white flex flex-col gap-3 ">
             <div className="flex flex-col gap-2">
               <label htmlFor="">User ID</label>
               <input
                 type="text"
                 placeholder="enter ID"
-                className="placeholder:text-white py-3 rounded-lg border border-white w-[25rem] pl-3"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-black dark:border-white lg:w-[25rem] w-[23rem] md:w-[45rem] pl-3"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -81,7 +81,7 @@ const Editprofile = () => {
               <input
                 type="text"
                 placeholder="paul@gmail.com"
-                className="placeholder:text-white py-3 rounded-lg border border-white pl-3"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-black dark:border-white pl-3"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -89,7 +89,7 @@ const Editprofile = () => {
               <input
                 type="text"
                 placeholder="0802-222-222"
-                className="placeholder:text-white py-3 rounded-lg border border-white pl-3"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-blac pl-3"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -97,7 +97,7 @@ const Editprofile = () => {
               <input
                 type="text"
                 placeholder=""
-                className="placeholder:text-white py-3 rounded-lg border border-white pl-3"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-black dark:border-white pl-3"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -105,7 +105,7 @@ const Editprofile = () => {
               <input
                 type="text"
                 placeholder=""
-                className="placeholder:text-white py-3 rounded-lg border border-white pl-3"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg border border-black dark:border-white pl-3"
               />
             </div>
           </div>

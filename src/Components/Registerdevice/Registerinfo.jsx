@@ -2,29 +2,29 @@ import React from "react";
 
 const Registerinfo = () => {
   return (
-    <div className="flex flex-col mt-6  w-full ">
-      <p className="text-white text-4xl">Device Information</p>
+    <div className="flex flex-col mt-6 w-full">
+      <p className="text-black dark:text-white text-4xl">Device Information</p>
       <div className="flex flex-col py-2">
-        <label htmlFor="" className="text-white">
+        <label htmlFor="" className="text-black dark:text-white">
           Device Name
         </label>
         <input
           type="text"
           placeholder="enter device name"
-          className="placeholder:text-white rounded-2xl px-3 py-2 border border-white mt-2"
+          className="placeholder:text-black dark:text-white rounded-2xl px-3 py-2 border border-black dark:border-white mt-2"
         />
       </div>
-      <label htmlFor="" className="text-white">
+      <label htmlFor="" className="text-black dark:text-white border-black">
         Category
       </label>
       <select
         name="select category"
         id=""
-        className="text-white border border-white rounded-2xl px-3 py-2 bg-black mt-2"
+        className="text-black dark:text-white  border border-black dark:border-white rounded-2xl px-3 py-2 bg-white dark:bg-black mt-2"
       >
         <option
           value=""
-          className="text-white border border-white px-3 py-2 rounded-2xl"
+          className="text-black dark:text-white border border-white px-3 py-2 rounded-2xl"
         >
           Camera
         </option>
@@ -37,57 +37,59 @@ const Registerinfo = () => {
         <option value="">Other</option>
       </select>
       <div className="flex flex-col py-2">
-        <label htmlFor="" className="text-white">
+        <label htmlFor="" className="text-black dark:text-white">
           Brand
         </label>
         <input
           type="text"
           placeholder="enter brand"
-          className="placeholder:text-white rounded-2xl px-3 py-2 border border-white mt-2"
+          className="placeholder:text-black placeholder:dark:text-white rounded-2xl px-3 py-2 border border-black dark:border-white mt-2"
         />
       </div>
       <div className="flex flex-col py-2">
-        <label htmlFor="" className="text-white">
+        <label htmlFor="" className="text-black dark:text-white">
           Model
         </label>
         <input
           type="text"
           placeholder="enter model"
-          className="placeholder:text-white rounded-2xl px-3 py-2 border border-white mt-2"
+          className="placeholder:text-black dark:text-white rounded-2xl px-3 py-2 border border-black dark:border-white mt-2"
         />
       </div>
       <div className="flex flex-col py-2">
-        <label htmlFor="" className="text-white">
+        <label htmlFor="" className="text-black dark:text-white">
           Serial No
         </label>
         <input
           type="text"
           placeholder="enter serial no"
-          className="placeholder:text-white rounded-2xl px-3 py-2 border border-white mt-2"
+          className="placeholder:text-black dark:text-white rounded-2xl px-3 py-2 border border-black dark:border-white mt-2"
         />
       </div>
       <div className="py-2 flex flex-col gap-2">
-        <label htmlFor="" className="text-white">
+        <label htmlFor="" className="text-black dark:text-white">
           Purchase Date
         </label>
         <input
           type="text"
           placeholder="enter"
-          className="placeholder:text-white rounded-2xl px-3 py-2 border border-white mt-2"
+          className="placeholder:text-black dark:text-white rounded-2xl px-3 py-2 border border-black dark:border-white mt-2"
         />
       </div>
       <div className="flex flex-col gap-2 py-3">
-        <label htmlFor="" className="text-white">
+        <label htmlFor="" className="text-black dark:text-white">
           IMEI
         </label>
         <input
           type="text"
           placeholder="0000000000000000"
-          className="placeholder:text-white rounded-2xl px-3 py-2 border border-white mt-2"
+          className="placeholder:text-black dark:text-white rounded-2xl px-3 py-2 border border-black dark:border-white mt-2"
         />
-        <p className="text-white">if your gadget has no IMEI,leave blank</p>
+        <p className="text-black dark:text-white">
+          if your gadget has no IMEI,leave blank
+        </p>
       </div>
-      <label htmlFor="" className="text-white">
+      <label htmlFor="" className="text-black dark:text-white">
         Mac Address
       </label>
       <input

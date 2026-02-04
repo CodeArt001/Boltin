@@ -100,16 +100,16 @@ const Chatbot = () => {
           type: "message",
           text: messageText,
           timestamp: new Date().toISOString(),
-        })
+        }),
       );
       setIsTyping(true);
     }
   };
 
   return (
-    <div className="bg-black  flex flex-col h-screen w-full  lg:pl-6 ">
+    <div className="bg-white text-black dark:bg-black dark:text-white  flex flex-col h-screen w-full  lg:pl-6 ">
       <div className="shrink-0">
-        <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2">
+        <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow shadow-black/30 mt-2">
           <Dashboardbar text="Notifications" />
         </div>
         <div className="flex items-center gap-2 px-4 py-2 ">
@@ -118,7 +118,7 @@ const Chatbot = () => {
               isConnected ? "bg-green-500" : "bg-red-500"
             }`}
           ></div>
-          <span className="text-white text-sm">
+          <span className=" text-sm">
             {isConnected ? "Connected" : "Disconnected"}
           </span>
         </div>
@@ -141,7 +141,7 @@ const Chatbot = () => {
               <div key={msg.id} className="py-5 w-[50%] ml-auto pr-16">
                 <Receiver message={msg.text} />
               </div>
-            )
+            ),
           )}
         </div>
         {isTyping && (

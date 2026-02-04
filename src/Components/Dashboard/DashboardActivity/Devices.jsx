@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../Card";
 import camera from "../../../assets/images/Ellipse.png";
 import { useNavigate } from "react-router-dom";
@@ -78,7 +77,7 @@ const Devices = ({
             active={card.active}
             activeclassName=""
             buttonText={card.buttonText}
-            cardHeight="xl:h-[220px] lg:h-[220px] sm:h-[220px] h-[220px]"
+            cardHeight="xl:h-[220px] lg:h-[220px] sm:h-[220px] h-[220px] md:h-[220px]"
             showViewIcon={false}
             onClick={handleViewDetails}
           />

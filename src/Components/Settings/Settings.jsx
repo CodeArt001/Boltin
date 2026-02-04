@@ -7,11 +7,11 @@ import Notificationsettings from "./Notificationsettings";
 const Settings = () => {
   const [activeTab, setActiveTab] = useState("account-settings");
   return (
-    <div className="bg-black  min-h-screen w-full  md:px-10 lg:pl-6 relative">
-      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2">
+    <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen w-full  md:px-10 lg:pl-6 relative">
+      <div className="mt-2 shadow shadow-black/30">
         <Dashboardbar text="Settings" />
       </div>
-      <div className="flex justify-between px-6 text-white cursor-pointer mt-10">
+      <div className="flex justify-between px-6  cursor-pointer mt-10">
         <div
           onClick={() => setActiveTab("account-settings")}
           className={` ${
@@ -24,7 +24,7 @@ const Settings = () => {
         </div>
         <div
           onClick={() => setActiveTab("notification-settings")}
-          className={`text-white cursor-pointer ${
+          className={` cursor-pointer ${
             activeTab === "notification-settings"
               ? "border-b-3"
               : "border-b-4 border-transparent"

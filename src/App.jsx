@@ -22,13 +22,12 @@ import Request from "./Components/Ownership/Request";
 import Notifications from "./Components/Notifications/Notifications";
 import Settings from "./Components/Settings/Settings";
 import Profileinfo from "./Components/Profile/Profileinfo";
-
 import Accountsecurity from "./Components/Settings/Accountsecurity";
 import { Suspense } from "react";
 import DashboardLoadingSkeleton from "./Components/Dashboard/DashboardLoadingSkeleton";
-
 import Chatbot from "./Components/ChatBox/Chatbot";
 import Transferhistory from "./Components/Ownership/Transferhistory";
+import Featurecard from "./Components/paragraphs/Featurecard";
 
 function App() {
   const location = useLocation();
@@ -40,9 +39,9 @@ function App() {
     "/missing",
     "/missing-upload",
     "/missing-action",
-    "stolen-upload",
+    "/stolen-upload",
     "/stolen",
-    "stolen-action",
+    "/stolen-action",
     "/ownership",
     "/upload-ownership",
     "/complete",
@@ -59,7 +58,7 @@ function App() {
     "/transfer-history",
   ];
   const isDashboardRoute = dashboardRoutes.some((route) =>
-    location.pathname.startsWith(route)
+    location.pathname.startsWith(route),
   );
   const showNavbar =
     !location.pathname.includes("/users") &&
@@ -69,59 +68,74 @@ function App() {
     !isDashboardRoute;
   return (
     <>
-      {showNavbar && <Navbar />}
-      {isDashboardRoute ? (
-        <div className="flex ">
-          <Sidebars />
-          <main className="flex-1">
-            <Suspense fallback={<DashboardLoadingSkeleton />}>
-              <Routes>
-                <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/mydevice" element={<Mydevice />} />
-                <Route path="/device-detail/:id" element={<Devicedetail />} />
-                <Route path="/registerdevice" element={<Registerdevice />} />
-                <Route path="/missing" element={<Missing />} />
-                <Route path="/missing-upload" element={<Missingupload />} />
-                <Route path="/missing-action" element={<Missingaction />} />
-                <Route path="/stolen" element={<Stolen />} />
-                <Route path="/stolen-upload" element={<Stolenupload />} />
-                <Route path="/stolen-action" element={<Stolenaction />} />
-                <Route path="/ownership" element={<Ownership />} />
-                <Route path="/upload-ownership" element={<Uploadownership />} />
-                <Route path="/complete" element={<Complete />} />
-                <Route path="/request" element={<Request />} />
-                <Route path="/notifications" element={<Notifications />} />
-                <Route path="/settings" element={<Settings />} />
-                <Route
-                  path="/edit-profile"
-                  element={<Navigate to="/profile-info/edit" replace />}
-                />
-                <Route
-                  path="/profile-change"
-                  element={<Navigate to="/profile-info" replace />}
-                />
-                <Route path="/profile-info/edit" element={<Profileinfo />} />
-                <Route path="/profile-info" element={<Profileinfo />} />
+      <div>
+        {showNavbar && <Navbar />}
+        {isDashboardRoute ? (
+          <div
+            className="flex bg-white dark:bg-black text-black dark:text-white transition-colors min-h-screen "
+            style={{ marginTop: "-23px" }}
+          >
+            <Sidebars />
+            <main className="flex-1  lg:px-4 py-4">
+              <Suspense fallback={<DashboardLoadingSkeleton />}>
+                <Routes>
+                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/mydevice" element={<Mydevice />} />
+                  <Route path="/device-detail/:id" element={<Devicedetail />} />
+                  <Route path="/registerdevice" element={<Registerdevice />} />
+                  <Route path="/missing" element={<Missing />} />
+                  <Route path="/missing-upload" element={<Missingupload />} />
+                  <Route path="/missing-action" element={<Missingaction />} />
+                  <Route path="/stolen" element={<Stolen />} />
+                  <Route path="/stolen-upload" element={<Stolenupload />} />
+                  <Route path="/stolen-action" element={<Stolenaction />} />
+                  <Route path="/ownership" element={<Ownership />} />
+                  <Route
+                    path="/upload-ownership"
+                    element={<Uploadownership />}
+                  />
+                  <Route path="/complete" element={<Complete />} />
+                  <Route path="/request" element={<Request />} />
+                  <Route path="/notifications" element={<Notifications />} />
+                  <Route path="/settings" element={<Settings />} />
+                  <Route
+                    path="/edit-profile"
+                    element={<Navigate to="/profile-info/edit" replace />}
+                  />
+                  <Route
+                    path="/profile-change"
+                    element={<Navigate to="/profile-info" replace />}
+                  />
+                  <Route path="/profile-info/edit" element={<Profileinfo />} />
+                  <Route path="/profile-info" element={<Profileinfo />} />
 
-                <Route path="/account-security" element={<Accountsecurity />} />
-                <Route path="/device-detail" element={<Devicedetail />} />
-                <Route
-                  path="/registersuccessful"
-                  element={<Registersuccessful />}
-                />
-                <Route path="/chat-bot" element={<Chatbot />} />
-                <Route path="/transfer-history" element={<Transferhistory />} />
-              </Routes>
-            </Suspense>
-          </main>
-        </div>
-      ) : (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/userr" element={<Userr />} />
-        </Routes>
-      )}
+                  <Route
+                    path="/account-security"
+                    element={<Accountsecurity />}
+                  />
+                  <Route path="/device-detail" element={<Devicedetail />} />
+                  <Route
+                    path="/registersuccessful"
+                    element={<Registersuccessful />}
+                  />
+                  <Route path="/chat-bot" element={<Chatbot />} />
+                  <Route
+                    path="/transfer-history"
+                    element={<Transferhistory />}
+                  />
+                </Routes>
+              </Suspense>
+            </main>
+          </div>
+        ) : (
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/our-features" element={<Featurecard />} /> */}
+            <Route path="/users" element={<Users />} />
+            <Route path="/userr" element={<Userr />} />
+          </Routes>
+        )}
+      </div>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const Upload = ({
   text = "Upload Image",
@@ -11,7 +11,7 @@ const Upload = ({
 
   /**
    * Handles the file selection event.
-   * @param {Event} event T
+   * @param {Event} event
    */
   const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -32,28 +32,24 @@ const Upload = ({
   };
   return (
     <div className="text-center w-full">
-      <span className="text-white text-lg font-medium ">{text}</span>
+      <span className="text-black dark:text-white text-lg font-medium ">
+        {text}
+      </span>
       <div
-        className={`bg-zinc-900 p-10 flex flex-col items-start gap-4 ${uploadwidth} rounded-xl`}
+        className={`bg-white p-10 flex flex-col items-start gap-4 ${uploadwidth} rounded-xl`}
       >
-        {/* Title */}
-
-        {/* Upload Area */}
         <label
-          htmlFor="file-upload" // Connects the label to the input via ID
+          htmlFor="file-upload"
           className={`relative w-full ${uploadheight} flex flex-col items-center justify-center border-2 border-dashed border-zinc-300 rounded-2xl cursor-pointer hover:bg-zinc-800 transition-colors overflow-hidden`}
         >
-          {/* Conditional Rendering: Show Preview or Placeholder */}
           {previewUrl ? (
             <>
-              {/* Image Preview */}
               <img
                 src={previewUrl}
                 alt="Preview"
                 className="absolute inset-0 w-full h-full object-cover"
               />
 
-              {/* Remove Button Overlay (visible when image is present) */}
               <div
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition-opacity"
                 onClick={handleRemoveImage}
@@ -74,7 +70,6 @@ const Upload = ({
               </div>
             </>
           ) : (
-            /* Placeholder Icon (visible when no image is present) */
             <div className="flex flex-col items-center justify-center pt-5 pb-6">
               <svg
                 className="w-10 h-10 text-white mb-2"
@@ -92,7 +87,6 @@ const Upload = ({
             </div>
           )}
 
-          {/* The Actual Hidden File Input */}
           <input
             id="file-upload"
             ref={fileInputRef}

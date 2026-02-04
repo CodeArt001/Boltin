@@ -3,8 +3,8 @@ import Dashboardbar from "../Dashboard/Dashboardbar";
 
 const Transferhistory = () => {
   return (
-    <div className="bg-black  min-h-screen w-full  lg:pl-6 relative">
-      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2">
+    <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen w-full lg:pl-6 relative">
+      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow shadow-black/30 mt-2">
         <Dashboardbar
           text="Transfer History"
           textClassName="md:text-[1.8rem]"
@@ -12,55 +12,97 @@ const Transferhistory = () => {
       </div>
       <div className="mt-4 md:mt-18 lg:mt-4 lg:px-0 md:px-5 lg:pr-14">
         <div className="hidden md:block overflow-x-auto">
-          <table className="border border-collapse text-white w-full h-60  ">
-            <tr className="border border-white ">
-              <th className="border border-white px-4 ">S/N</th>
-              <th className="border border-white px-4">Device</th>
-              <th className="border border-white px-4">Status</th>
-              <th className="border border-white px-4">From</th>
-              <th className="border border-white px-4">To</th>
-              <th className="border border-white px-4">Date</th>
+          <table className="border border-collapse text-black dark:text-white w-full h-60  ">
+            <tr className="border border-black dark:border-white ">
+              <th className="border border-black dark:border-white px-4 ">
+                S/N
+              </th>
+              <th className="border border-black dark:border-white px-4">
+                Device
+              </th>
+              <th className="border border-black dark:border-white px-4">
+                Status
+              </th>
+              <th className="border border-black dark:border-white px-4">
+                From
+              </th>
+              <th className="borderborder-black dark:border-white px-4">To</th>
+              <th className="border border-black dark:border-white px-4">
+                Date
+              </th>
             </tr>
-            <tr className="border border-white text-center">
-              <td className="border border-white px-4">01</td>
-              <td className="border border-white px-4">Sony 224</td>
-              <td className="border border-white px-4 text-yellow-400">
+            <tr className="border border-black dark:border-white text-center">
+              <td className="border border-black dark:border-white px-4">01</td>
+              <td className="border border-black dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-black dark:border-white px-4 text-yellow-400">
                 Pending
               </td>
-              <td className="border border-white px-4">Paul</td>
-              <td className="border border-white px-4">Noah</td>
-              <td className="border border-white px-4">31/07/2024</td>
+              <td className="border border-black dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-black dark:border-whitepx-4">
+                Noah
+              </td>
+              <td className="border border-black dark:border-white px-4">
+                31/07/2024
+              </td>
             </tr>
             <tr className="border border-white text-center">
-              <td className="border border-white px-4">01</td>
-              <td className="border border-white px-4">Sony 224</td>
-              <td className="border border-white px-4 text-red-600">
+              <td className="border border-black dark:border-white px-4">01</td>
+              <td className="border border-black dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-black dark:border-white px-4 text-red-600">
                 {" "}
                 Rejected
               </td>
-              <td className="border border-white px-4">Paul</td>
-              <td className="border border-white px-4">Noah</td>
-              <td className="border border-white px-4">31/07/2024</td>
+              <td className="border border-black dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-black dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-black dark:border-white px-4">
+                31/07/2024
+              </td>
             </tr>
-            <tr className="border border-white text-center">
-              <td className="border border-white px-4">01</td>
-              <td className="border border-white px-4">Sony 224</td>
-              <td className="border border-white px-4 text-yellow-400">
+            <tr className="border border-black dark:border-white text-center">
+              <td className="border border-black dark:border-white px-4">01</td>
+              <td className="border border-black dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-black dark:border-white px-4 text-yellow-400">
                 Pending
               </td>
-              <td className="border border-white px-4">Paul</td>
-              <td className="border border-white px-4">Noah</td>
-              <td className="border border-white px-4">31/07/2024</td>
+              <td className="border border-black dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-black dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-black dark:border-white px-4">
+                31/07/2024
+              </td>
             </tr>
-            <tr className="border border-white text-center">
-              <td className="border border-white px-4">01</td>
-              <td className="border border-white px-4">Sony 224</td>
-              <td className="border border-white px-4 text-green-600">
+            <tr className="border border-black dark:border-white text-center">
+              <td className="border border-black dark:border-white px-4">01</td>
+              <td className="border border-black dark:border-white px-4">
+                Sony 224
+              </td>
+              <td className="border border-black dark:border-white px-4 text-green-600">
                 Accepted
               </td>
-              <td className="border border-white px-4">Paul</td>
-              <td className="border border-white px-4">Noah</td>
-              <td className="border border-white px-4">31/07/2024</td>
+              <td className="border border-black dark:border-white px-4">
+                Paul
+              </td>
+              <td className="border border-black dark:border-white px-4">
+                Noah
+              </td>
+              <td className="border border-black dark:border-white px-4">
+                31/07/2024
+              </td>
             </tr>
           </table>
         </div>
@@ -68,9 +110,9 @@ const Transferhistory = () => {
           {[1, 2, 3].map((item) => (
             <div
               key={item}
-              className="border border-white p-4 rounded-lg text-white bg-zinc-900"
+              className="border border-black dark:border-white p-4 rounded-lg text-white bg-white dark:zinc-900"
             >
-              <div className="flex justify-between border-b border-gray-700 pb-2 mb-2">
+              <div className="flex jwhiteustify-between border-b border-gray-700 pb-2 mb-2">
                 <span className="font-bold">Device:</span>
                 <span>Sony 224</span>
               </div>

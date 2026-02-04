@@ -10,13 +10,13 @@ const Profileinfo = () => {
   const isEditing = location.pathname.endsWith("/profile-info/edit");
   const incomingTab = location.state?.activeTab;
   const [activeTab, setActiveTab] = useState(
-    incomingTab || "personal-information"
+    incomingTab || "personal-information",
   );
 
   return (
-    <div className="bg-black text-white min-h-screen w-full">
+    <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen w-full">
       <div>
-        <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 w-full  pr-0 sm:pr-0 lg:pl-6 xl:pl-6">
+        <div className="">
           <Dashboardbar text="Profile" />
         </div>
       </div>

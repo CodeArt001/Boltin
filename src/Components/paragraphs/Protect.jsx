@@ -7,7 +7,7 @@ const Protect = ({ text = "Protect Your Gear. Protect Your Work." }) => {
       <div className="relative flex items-center justify-center w-full  ">
         <div className="absolute w-full h-0.5 bg-white opacity-70"></div>
 
-        <div className="relative bg-white text-black px-8 py-3 rounded-full font-semibold lg:text-3xl text-[1rem] shadow-md">
+        <div className="relative font-space bg-white text-black px-8 py-3 rounded-full font-semibold lg:text-3xl text-[1rem] shadow-md">
           {text}
         </div>
       </div>

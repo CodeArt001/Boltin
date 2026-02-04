@@ -27,7 +27,7 @@ const Overviewcard = ({
         <Card
           key={index}
           title={item.title}
-          textClassName=" font-semibold text-2xl"
+          textClassName="font-semibold text-2xl"
           value={item.value}
           valueClassName="text-3xl "
           buttonText={item.buttonText}

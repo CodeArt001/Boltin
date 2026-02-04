@@ -25,12 +25,12 @@ const Missingupload = () => {
     },
   ];
   return (
-    <div className="bg-black h-full w-full  lg:pl-6  ">
-      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2">
+    <div className="bg-white text-black dark:bg-black dark:text-white h-full w-full lg:pl-6">
+      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow shadow-black/30 mt-2">
         <Dashboardbar text="Declare Missing" />
       </div>
       <div className="lg:w-[35%] sm:w-full w-full mt-10 md:mt-17 md:px-3 flex flex-col place-self-center">
-        <div className="border border-white px-6 py-10 text-white rounded-2xl ">
+        <div className="border border-black dark:border-white px-6 py-10  rounded-2xl ">
           {uploadMissing.map((mis, index) => (
             <div
               onClick={() => setSelectedDevice(mis)}
@@ -53,9 +53,9 @@ const Missingupload = () => {
           <select
             name=""
             id=""
-            className="border border-white rounded-2xl text-white py-2 pl-2 "
+            className="border border-black dark:border-white rounded-2xl py-2 pl-2 "
           >
-            <option value="" className=" bg-black text-white">
+            <option value="" className=" bg-black ">
               missing
             </option>
             <option value="" className="text-white bg-black">
@@ -63,35 +63,35 @@ const Missingupload = () => {
             </option>
           </select>
         </div>
-        <div className="flex flex-col gap-2 text-white py-2">
+        <div className="flex flex-col gap-2  py-2">
           <label htmlFor="">Last Seen Location:</label>
           <input
             type="text"
             placeholder="enter last seen location"
-            className="placeholder:text-white border border-white rounded-2xl py-2 pl-2"
+            className="placeholder:text-black placeholder:dark:text-white border border-black dark:border-white rounded-2xl py-2 pl-2"
           />
         </div>
-        <div className="flex flex-col gap-2 text-white">
+        <div className="flex flex-col gap-2">
           <label htmlFor="">Last Seen Location:</label>
           <input
             type="text"
             placeholder="enter last seen location"
-            className="placeholder:text-white border border-white rounded-2xl py-2 pl-2"
+            className="placeholder:text-white placeholder:dark:text-black border border-black dark:border-white rounded-2xl py-2 pl-2"
           />
         </div>
-        <div className="flex flex-col gap-2 text-white py-2">
+        <div className="flex flex-col gap-2 py-2">
           <label htmlFor="">Last Seen Location:</label>
           <input
             type="text"
             placeholder="enter last seen location "
-            className="placeholder:text-white  border-white py-2 pl-2 border rounded-lg"
+            className="placeholder:text-white placeholder:dark:text-black border border-black dark:border-white  py-2 pl-2  rounded-lg"
           />
         </div>
         <Upload text="Upload Evidence (Optional)" uploadwidth="full" />
         <button
           onClick={() => handleDeclareMissing(selectedDevice)}
           disabled={!selectedDevice}
-          className="bg-purple-600 hover:bg-purple-700 text-white px-14 py-2 rounded-2xl   mt-2 "
+          className="bg-purple-600 hover:bg-purple-700 px-14 py-2 rounded-2xl   mt-2 "
         >
           Declare Missing
         </button>

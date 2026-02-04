@@ -1,15 +1,28 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: "Space Grotesk";
   src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
-  font-weight: 300 700;
+  font-weight: 100 700;
   font-style: normal;
+}
+
+@theme {
+  --font-space: "Space Grotesk", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  /* --color-bg: #ffffff;
+  --color-bg-dark: #000000;
+  --color-: #000000;
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-accent: #29ff85;
+  --color-bg-red: #e50914; */
 }
 
 body,
 html {
-  background-color: black;
   margin: 0;
   padding: 0;
 }

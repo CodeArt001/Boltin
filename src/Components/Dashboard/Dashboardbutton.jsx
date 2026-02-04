@@ -12,7 +12,7 @@ const Dashboardbutton = ({
     <div>
       <button
         onClick={onClick}
-        className={`flex px-4 py-2 bg-[#6C5CE7] text-white text-center rounded-lg gap-4 ${buttonClassName}`}
+        className={`flex px-16 py-2 bg-[#1F7A5A] text-white text-center rounded-lg gap-4 ${buttonClassName}`}
       >
         {text}
         {viewIcon && (

@@ -8,7 +8,7 @@ const Login = ({ loginClassName = "border-black " }) => {
   return (
     <div
       onClick={handleLogin}
-      className={`lg:px-4 px-3 py-1.5 cursor-pointer  rounded-lg border  ${loginClassName} `}
+      className={`lg:px-4 px-3 py-1.5 cursor-pointer rounded-lg border font-inter  ${loginClassName} `}
     >
       <button>Login</button>
     </div>

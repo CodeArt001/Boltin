@@ -1,11 +1,16 @@
 import React from "react";
 import { User, Mail, Phone, Lock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Usercreate = () => {
+  const navigate = useNavigate();
+  const handleCreate = () => {
+    navigate("/userr");
+  };
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center  ">
-      <div className="w-full  bg-zinc-900 rounded-2xl p-8 shadow-xl">
-        <h1 className="text-white text-3xl font-semibold text-center mb-8">
+    <div className="min-h-screen h-[80%] bg-white dark:bg-black flex items-center justify-center shadow shadow-black/30 ">
+      <div className="w-full   rounded-2xl p-8">
+        <h1 className=" text-3xl font-semibold text-center font-space mt-6">
           Create Account
         </h1>
 
@@ -117,7 +122,7 @@ const Usercreate = () => {
 
           {/* Submit Button */}
           <button
-            // onClick={handleSubmit}
+            onClick={handleCreate}
             className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-lg transition mt-6"
           >
             Create Account

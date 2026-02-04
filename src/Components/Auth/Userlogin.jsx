@@ -3,16 +3,17 @@ import { useNavigate } from "react-router-dom";
 
 const Userlogin = () => {
   const navigate = useNavigate();
-  const handleLoginPage = () => {
+  const handleLoginPage = (e) => {
+    e.preventDefault();
     navigate("/dashboard");
   };
   return (
-    <div className="w-full  bg-zinc-900 rounded-2xl lg:p-8 shadow-xl py-3 lg:py-40 lg-px-0 px-4 md:px-9 ">
-      <h1 className="text-white lg:text-3xl text-2xl font-semibold text-center lg:mb-8 lg:py-0 py-4">
+    <div className="w-full h-[80%] bg-white dark:bg-black rounded-2xl lg:p-8 shadow shadow-black/30 py-3 lg:py-40 lg-px-0 px-4 md:px-9">
+      <h1 className="text-black dark:text-white lg:text-3xl text-2xl font-space font-semibold text-center lg:mb-8 lg:py-0 py-4">
         Login to your account
       </h1>
       <form action="">
-        <div className="text-white text-sm font-medium block mb-3">
+        <div className="text-black dark:text-white     text-sm font-medium block mb-3">
           <label className="" htmlFor="">
             User ID
           </label>
@@ -21,11 +22,11 @@ const Userlogin = () => {
             <input
               type="text"
               placeholder="enter user ID"
-              className="w-full bg-transparent border border-gray-600 rounded-lg pl-11 pr-4 py-3    text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition"
+              className="w-full bg-transparent border border-gray-600 rounded-lg pl-11 pr-4 py-3 text-black dark:text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition"
             />
           </div>
         </div>
-        <div className="text-white text-sm font-medium block mb-3 relative">
+        <div className="text-black dark:text-white text-sm font-medium block mb-3 relative">
           <label className="" htmlFor="">
             Password
           </label>
@@ -58,9 +59,7 @@ const Userlogin = () => {
         >
           Login
         </button>
-        <p className="text-center text-white mt-3">
-          Don `&apos;`t have an account?{" "}
-        </p>
+        <p className="text-center text-white mt-3">Don't have an account? </p>
       </form>
     </div>
   );

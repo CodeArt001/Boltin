@@ -1,10 +1,12 @@
 import React from "react";
 
-const Line = () => {
+const Line = ({ lineClassName = "bg-black dark:bg-white" }) => {
   return (
     <div>
       <div className="relative flex items-center justify-center w-full  ">
-        <div className="absolute w-full h-0.5 bg-white opacity-70"></div>
+        <div
+          className={`absolute w-full h-0.5  opacity-70 ${lineClassName}`}
+        ></div>
       </div>
     </div>
   );

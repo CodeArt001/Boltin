@@ -24,21 +24,21 @@ const Stolenaction = () => {
     },
   ];
   return (
-    <div className=" bg-black w-full  lg:pl-6 ">
-      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2">
+    <div className=" bg-white text-black dark:text-white dark:bg-black w-full lg:pl-6 ">
+      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow shadow-black/30 mt-2">
         <Dashboardbar text="Declare Stolen" />
       </div>
       <div className="lg:flex xl:flex items-center justify-between flex-col sm:flex-col md:flex">
         <div></div>
         <div className="flex flex-col justify-center items-center py-10">
           <img src={mark} alt="" className="my-3" />
-          <p className="text-white text-2xl my-2">Action Successful</p>
+          <p className=" text-2xl my-2">Action Successful</p>
           {stolenAction.map((item, index) => (
             <div
               key={index}
-              className="flex gap-3 border border-white px-5 py-8 rounded-lg justify-center items-center"
+              className="flex gap-3 border border-black dark:border-white px-5 py-8 rounded-lg justify-center items-center"
             >
-              <div className="flex flex-col items-center justify-center text-white">
+              <div className="flex flex-col items-center justify-center">
                 <img src={item.img} alt="camera-img" className="w-8 h-8" />
                 <p>{item.title}</p>
                 <p>{item.category}</p>
@@ -58,7 +58,7 @@ const Stolenaction = () => {
         </div>
         <div className="fixed  top-35 right-0 pr-6">
           <img src={chatBox} alt="chat" />
-          <p className="text-white">chatBox</p>
+          <p className="">chatBox</p>
         </div>
       </div>
     </div>

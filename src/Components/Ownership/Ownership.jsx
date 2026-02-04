@@ -70,27 +70,127 @@ const Ownership = () => {
       active: "Status: Missing",
       buttonText: "View ",
     },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 6,
+      img: camera,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
   ];
   return (
-    <div className="bg-black  min-h-screen w-full  lg:pl-6 relative">
-      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2">
+    <div className="bg-white text-black dark:bg-black dark:text-white  min-h-screen w-full  lg:pl-6 relative">
+      <div className="shadow shadow-black/30 mt-2">
         <Dashboardbar
           text="Transfer Ownership"
           textClassName="md:text-[1.8rem]"
         />
       </div>
       <h1 className="text-white py-4 text-2xl">Select Device to continue</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-14 gap-5  lg:pr-14 xl:pr-14 items-center justify-center py-5 relative">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-5  lg:pr-14 xl:pr-14 items-center justify-center py-5 relative">
         {stolenCards.map((cardds, index) => (
           <div key={index} onClick={() => handleCardClick(cardds.id)}>
-            <div className="cursor-pointer flex flex-col items-center justify-center text-white border border-white rounded-2xl px-4 py-8 ">
+            <div className="shadow shadow-black/30 cursor-pointer flex flex-col items-center justify-center  border border-white rounded-2xl px-4 py-8 ">
               <img src={cardds.img} alt="camera-img" className="w-8 h-8" />
               <p>{cardds.title}</p>
               <p>{cardds.category}</p>
               <p>{cardds.model}</p>
               <p>{cardds.active}</p>
 
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-14 py-2 rounded   mt-2 ">
+              <button className="bg-[#1F7A5A] hover:bg-[#1F7A5A] text-white px-14 py-2 rounded   mt-2 ">
                 {cardds.buttonText}
               </button>
             </div>

@@ -22,7 +22,7 @@ const Accountsecurity = () => {
   //   }
   return (
     <div className="flex justify-center">
-      <div className="relative flex  justify-between items-center text-white relative ">
+      <div className="relative flex  justify-between items-center text-black dark:text-white relative ">
         <div></div>
 
         <div className="flex flex-col items-center justify-center">
@@ -30,22 +30,17 @@ const Accountsecurity = () => {
             <img src={paull} alt="" />
             <p>Paul</p>
           </div>
-          <div className="flex flex-col text-white relative items-center">
-            <div className=" text-white border border-white rounded-lg py-3 lg:w-[25rem] w-[23rem] md:w-[45rem]  pl-3">
+          <div className="flex flex-col text-black dark:text-white relative items-center">
+            <div className="  border border-black dark:border-white rounded-lg py-3 lg:w-[25rem] w-[23rem] md:w-[45rem]  pl-3">
               Change Password
             </div>
-            {/* <input
-              type=""
-              placeholder="Change Password"
-              className="placeholder:text-white border border-white rounded-lg py-3 lg:w-[25rem] w-[23rem] md:w-[45rem]  pl-3 "
-            /> */}
 
             <div
               onClick={() => handleEnter()}
-              className="absolute right-4 top-5 cursor-pointer text-white"
+              className="absolute right-4 top-5 cursor-pointer text-black dark:text-white"
             >
               {enterPassword ? (
-                <SlArrowUp className="text-white" />
+                <SlArrowUp className="text-black dark:text-white" />
               ) : (
                 <SlArrowDown />
               )}
@@ -53,18 +48,14 @@ const Accountsecurity = () => {
 
             {enterPassword && (
               <div className="py-5 flex flex-col justify-center items-center ">
-                <div className="text-white border border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem]">
+                <div className="text-black border border-black dark:text-white dark:border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem]">
                   Enter last password
                 </div>
-                {/* <input
-                  type="text"
-                  placeholder="Enter last password"
-                  className="placeholder:text-white text-white border border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem] "
-                /> */}
+
                 {!comfirmPassword && (
                   <button
                     onClick={() => handleComfirm()}
-                    className="bg-[#6C5CE7] hover:bg-[#6C5CE7] text-white px-6 py-2 rounded  mt-2"
+                    className="bg-[#6C5CE7] hover:bg-[#6C5CE7] text-black dark:text-white px-6 py-2 rounded  mt-2"
                   >
                     Next
                   </button>
@@ -72,7 +63,7 @@ const Accountsecurity = () => {
 
                 {comfirmPassword && (
                   <div className="flex flex-col items-center gap-2">
-                    <div className=" mt-3 text-white border border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem] ">
+                    <div className=" mt-3 text-black border border-black dark:text-white dark:border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem] ">
                       Comfirm new passworld
                       <div />
                     </div>
