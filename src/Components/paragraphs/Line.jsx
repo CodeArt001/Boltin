@@ -1,5 +1,3 @@
-import React from "react";
-
 const Line = ({ lineClassName = "bg-black dark:bg-white" }) => {
   return (
     <div>

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 const Protect = ({ text = "Protect Your Gear. Protect Your Work." }) => {
   return (

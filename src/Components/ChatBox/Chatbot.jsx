@@ -43,6 +43,7 @@ const Chatbot = () => {
           setIsTyping(false);
         }
       } catch (error) {
+        console.log("Handling as plain text:", error);
         // Handle plain text messages
         setMessages((prev) => [
           ...prev,

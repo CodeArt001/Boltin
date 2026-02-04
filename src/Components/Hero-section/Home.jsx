@@ -1,7 +1,3 @@
-// import Gadget from "../Buttons/Gadget";
-// import system from "../../assets/images/computer.png";
-// import Protect from "../paragraphs/Protect";
-import { Link } from "react-router-dom";
 import Featurecard from "../paragraphs/Featurecard";
 import Workscard from "../paragraphs/Workscard";
 import { useNavigate } from "react-router-dom";

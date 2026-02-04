@@ -15,11 +15,8 @@ const Mydevice = ({
   onClick,
   buttonText,
   category,
-  categoryClassName = "",
   model,
-  modelClassName = "",
   active,
-  activeclassName = "",
   className = "",
   cardHeight = "",
 }) => {
@@ -207,15 +204,11 @@ const Mydevice = ({
               className="px-0 "
               imageClass="w-12 h-12"
               title={cards.title}
-              textClassName=" font-semibold"
+              textClassName="font-semibold"
               category={cards.category}
-              categoryClassName=""
               model={cards.model}
-              modelClassName=""
               active={cards.active}
-              activeclassName=""
               buttonText={cards.buttonText}
-              buttonClassName=""
               cardHeight="h-[230px] xl:h-[220px] lg:h-[220px] md:h-[270px]"
               showViewIcon={false}
               onClick={() => handleViewDevice(cards.id)}

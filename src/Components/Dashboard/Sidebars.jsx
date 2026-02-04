@@ -2,8 +2,17 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Line from "../paragraphs/line";
 import Logout from "../Buttons/Logout";
-import menu from "../../assets/images/Menu.png";
-import device from "../../assets/images/TV.png";
+import { MdGridView } from "react-icons/md";
+// import device from "../../assets/images/TV.png";
+import { MdOutlineDevices } from "react-icons/md";
+import { TbDeviceDesktopPlus } from "react-icons/tb";
+import { FiAlertTriangle } from "react-icons/fi";
+import { LuOctagonX } from "react-icons/lu";
+import { LuArrowLeftRight } from "react-icons/lu";
+import { CgProfile } from "react-icons/cg";
+import { LuHistory } from "react-icons/lu";
+import { LuBot } from "react-icons/lu";
+import { LuBellDot, LuSettings } from "react-icons/lu";
 
 const Sidebars = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,20 +22,45 @@ const Sidebars = () => {
   };
   const location = useLocation();
   const sideBarMenu = [
-    { id: 1, img: menu, name: "Dasboard", to: "/dashboard" },
-    { id: 2, img: device, name: "My Devices", to: "/mydevice" },
-    { id: 3, img: device, name: "Register Device", to: "/registerdevice" },
-    { id: 4, img: device, name: "Declare Missing", to: "/missing" },
-    { id: 5, img: device, name: "Declare Stolen", to: "/stolen" },
-    { id: 6, img: device, name: "Ownership Transfer", to: "/ownership" },
+    { id: 1, icon: <MdGridView />, name: "Dashboard", to: "/dashboard" },
+    {
+      id: 2,
+      icon: <MdOutlineDevices />,
+      name: "My Devices",
+      to: "/mydevice",
+    },
+    {
+      id: 3,
+      icon: <TbDeviceDesktopPlus />,
+      name: "Register Device",
+      to: "/registerdevice",
+    },
+    {
+      id: 4,
+      icon: <FiAlertTriangle />,
+      name: "Declare Missing",
+      to: "/missing",
+    },
+    { id: 5, icon: <LuOctagonX />, name: "Declare Stolen", to: "/stolen" },
+    {
+      id: 6,
+      icon: <LuArrowLeftRight />,
+      name: "Ownership Transfer",
+      to: "/ownership",
+    },
   ];
 
   const chatSection = [
-    { id: 1, img: device, name: "Profile", to: "/profile" },
-    { id: 2, img: device, name: "Transfer History", to: "/transfer-history" },
-    { id: 3, img: device, name: "Chatbot", to: "/chat-bot" },
-    { id: 4, img: device, name: "Notifications", to: "/notifications" },
-    { id: 5, img: device, name: "Settings", to: "/settings" },
+    { id: 1, icon: <CgProfile />, name: "Profile", to: "/profile" },
+    {
+      id: 2,
+      icon: <LuHistory />,
+      name: "Transfer History",
+      to: "/transfer-history",
+    },
+    { id: 3, icon: <LuBot />, name: "Chatbot", to: "/chat-bot" },
+    { id: 4, icon: <LuBellDot />, name: "Notifications", to: "/notifications" },
+    { id: 5, icon: <LuSettings />, name: "Settings", to: "/settings" },
   ];
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -82,7 +116,7 @@ const Sidebars = () => {
         } `}
       >
         <div
-          className={`border border-white dark:border-gray-800 shadow shadow-black/30 min-h-screen bg-white dark:bg-gray-950 w-[280px] sm:w-[300px] md:w-[320px] lg:w-[280px] xl:w-[280px] h-full px-2 z-40 transition-transform duration-300 flex flex-col pt-0
+          className={`border border-white dark:border-gray-800 shadow shadow-black/30 min-h-screen bg-white dark:bg-gray-950 w-[280px] sm:w-[300px] md:w-[320px] lg:w-[300px] xl:w-[305px] h-full px-2 z-40 transition-transform duration-300 flex flex-col pt-0
            `}
         >
           <div className="">
@@ -100,14 +134,13 @@ const Sidebars = () => {
                     to={item.to}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={` block px-3 xl:py-4 lg:py-4 md:py-4 py-2 font-space  rounded-lg mb-2  text-black dark:text-white text-[1.4rem] xl:text-2xl lg:text-2xl
-              transition-colors  ${isActive ? "" : "hover:bg-[#6e66ad]"}`}
+              transition-colors  ${isActive ? "" : "hover:bg-[#b6cfc7] hover:text-white"}`}
                   >
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 hover:text-[#1F7A5A] ">
                       {isActive && (
-                        <div className="bg-[#6C5CE7] w-2 h-8 border border-[#6C5CE7] text-white rounded-l-lg"></div>
+                        <div className="bg-[#1F7A5A] w-2 h-8 border border-[#1F7A5A] text-white rounded-l-lg"></div>
                       )}
-
-                      <img src={item.img} alt={item.name} className="w-5 h-5" />
+                      <div>{item.icon}</div>
                       <span>{item.name}</span>
                     </div>
                   </Link>
@@ -124,12 +157,11 @@ const Sidebars = () => {
                   key={items.id}
                   to={items.to}
                   className={`block px-3 py-2 font-space rounded-lg mb-2 text-black dark:text-white  text-[1.4rem] xl:text-2xl lg:text-2xl
-              transition-colors  ${
-                isActive ? "bg-[#6C5CE7]" : "hover:bg-[#6e66ad] "
-              }`}
+              transition-colors  ${isActive ? "bg-[#b6cfc7]" : ""}`}
                 >
-                  <div className="flex items-center gap-3">
-                    <img src={items.img} alt={items.name} className="w-5 h-5" />
+                  <div className="flex items-center gap-3 text-[#1F7A5A] ">
+                    <div>{items.icon}</div>
+                    <div />
                     {items.name}
                   </div>
                 </Link>

@@ -1,4 +1,3 @@
-// import React from "react";
 import Dashboardbar from "../Dashboard/Dashboardbar";
 import camera from "../../assets/images/Ellipse.png";
 import chatBox from "../../assets/images/chat.png";

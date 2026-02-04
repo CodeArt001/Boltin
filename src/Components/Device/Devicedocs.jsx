@@ -1,4 +1,3 @@
-import React from "react";
 import systemdoc from "../../assets/images/devicecomputer.png";
 
 const Devicedocs = () => {
