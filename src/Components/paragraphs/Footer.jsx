@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Line from "./line";
+import Line from "./Line";
 
 const Footer = () => {
   const navigate = useNavigate();

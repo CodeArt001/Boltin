@@ -103,12 +103,12 @@ const Devicetable = () => {
   };
   return (
     <div className="">
-      {/* Header */}
       <div className=" py-3 ">
-        <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">Devices</h2>
+        <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+          Devices
+        </h2>
       </div>
 
-      {/* Desktop Table View */}
       <div className="hidden md:block overflow-x-auto w-full overflow-hidden border-2 border-blue-400 rounded-lg bg-white shadow shadow-black/30">
         <table className="w-full">
           <thead className="bg-gray-100">
@@ -162,7 +162,6 @@ const Devicetable = () => {
         </table>
       </div>
 
-      {/* Mobile Card View */}
       <div className="md:hidden">
         {devices.map((device, index) => (
           <div

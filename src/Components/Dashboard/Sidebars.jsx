@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Line from "../paragraphs/line";
+import Line from "../paragraphs/Line";
 import Logout from "../Buttons/Logout";
 import { MdGridView } from "react-icons/md";
 import { MdOutlineDevices } from "react-icons/md";
