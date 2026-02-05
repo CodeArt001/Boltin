@@ -1,8 +1,9 @@
 import Activities from "./DashboardActivity/Activities";
 import Devicetable from "./Devicetable";
 // import DashboardBar from "./DashboardBar";
-import OverviewCardd from "./DashboardActivity/OverviewCardd";
+// import OverviewCardd from "./DashboardActivity/OverviewCardd";
 import DashboardBar from "./DashboardBar";
+import OverviewCard from "./DashboardActivity/OverviewCard";
 
 const Dashboard = () => {
   return (
@@ -11,7 +12,7 @@ const Dashboard = () => {
         <DashboardBar />
       </div>
       <div className="md:mt-10 mt-0 lg:mt-0">
-        <OverviewCardd />
+        <OverviewCard />
       </div>
       <div className="lg:px-6 px-0">
         <Devicetable />

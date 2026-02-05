@@ -1,6 +1,6 @@
 import Devicecard from "../Devicecard";
 
-const OverviewCardd = () => {
+const OverviewCard = () => {
   const deviceStats = [
     { title: "Total Device", count: 30, barColor: "bg-blue-600" },
     { title: "Active Device", count: 25, barColor: "bg-green-600" },
@@ -22,4 +22,4 @@ const OverviewCardd = () => {
   );
 };
 
-export default OverviewCardd;
+export default OverviewCard;
