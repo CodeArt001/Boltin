@@ -1,5 +1,3 @@
-// import React from "react";
-// import Dashboardbar from "../Dashboard/DashboardBar";
 import chatBox from "../../assets/images/chat.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import DashboardBar from "../Dashboard/DashboardBar";

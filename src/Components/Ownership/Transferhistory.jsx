@@ -1,5 +1,4 @@
 import DashboardBar from "../Dashboard/DashboardBar";
-// import Dashboardbar from "../Dashboard/DashboardBar";
 
 const Transferhistory = () => {
   return (

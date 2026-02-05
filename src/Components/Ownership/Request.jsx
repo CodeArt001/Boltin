@@ -1,12 +1,9 @@
-// import React from "react";
 import chatBox from "../../assets/images/chat.png";
 import camera from "../../assets/images/Ellipse.png";
 import mark from "../../assets/images/success.png";
 import barcode from "../../assets/images/code.png";
-// import Dashboardbar from "../Dashboard/DashboardBar";
 import { useNavigate } from "react-router-dom";
 import DashboardBar from "../Dashboard/DashboardBar";
-// import { useLocation } from "react-router-dom";
 
 const Request = () => {
   const navigate = useNavigate();
