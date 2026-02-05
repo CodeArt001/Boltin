@@ -30,11 +30,9 @@ const Navbar = () => {
         <ul className="hidden  lg:flex font-inter items-center justify-center lg:gap-8 gap-3 lg:text-2xl text-[1.4rem]  cursor-pointer ">
           {navLinks.map((link) => (
             <li className="hover:text-gray-600" key={link.name}>
-              <li key={link.name}>
-                <a href={link.href} className="hover:text-gray-600">
-                  {link.name}
-                </a>
-              </li>
+              <a href={link.href} className="hover:text-gray-600">
+                {link.name}
+              </a>
             </li>
           ))}
         </ul>
@@ -46,7 +44,6 @@ const Navbar = () => {
             Get Started
           </button>
 
-          {/* <ThemeToggle /> */}
           <ThemeToggle />
         </div>
         <button
@@ -62,11 +59,9 @@ const Navbar = () => {
             <ul className="flex flex-col p-6 gap-4 md:gap-6 ">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <li key={link.name}>
-                    <a href={link.href} className="hover:text-gray-600">
-                      {link.name}
-                    </a>
-                  </li>
+                  <a href={link.href} className="hover:text-gray-600">
+                    {link.name}
+                  </a>
                 </li>
               ))}
               <div className="flex flex-col gap-3 pt-2">
