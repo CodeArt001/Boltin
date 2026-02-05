@@ -1,8 +1,9 @@
-import Dashboardbar from "../Dashboard/DashboardBar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import Sender from "./Sender";
 import Receiver from "./Receiver";
 import Messageinput from "./Messageinput";
 import { useEffect, useRef, useState } from "react";
+import DashboardBar from "../Dashboard/DashboardBar";
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [isConnected, setIsConnected] = useState(false);
@@ -111,7 +112,7 @@ const Chatbot = () => {
     <div className="bg-white text-black dark:bg-black dark:text-white  flex flex-col h-screen w-full  lg:pl-6 ">
       <div className="shrink-0">
         <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow shadow-black/30 mt-2">
-          <Dashboardbar text="Notifications" />
+          <DashboardBar text="Notifications" />
         </div>
         <div className="flex items-center gap-2 px-4 py-2 ">
           <div
