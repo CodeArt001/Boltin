@@ -1,3 +1,10 @@
+import {
+  MailIcon,
+  User2,
+  PhoneCall,
+  LockIcon,
+  LockOpenIcon,
+} from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Usercreate = () => {
@@ -19,7 +26,7 @@ const Usercreate = () => {
               Full Name
             </label>
             <div className="relative">
-              <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <User2 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="text"
                 name="fullName"
@@ -37,7 +44,7 @@ const Usercreate = () => {
               Email Address
             </label>
             <div className="relative">
-              <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <MailIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="email"
                 name="email"
@@ -55,7 +62,7 @@ const Usercreate = () => {
               Phone Number
             </label>
             <div className="relative">
-              <Phone className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <PhoneCall className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="tel"
                 name="phone"
@@ -73,7 +80,7 @@ const Usercreate = () => {
               Password
             </label>
             <div className="relative">
-              <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <LockIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="password"
                 name="password"
@@ -91,7 +98,7 @@ const Usercreate = () => {
               Confirm Password
             </label>
             <div className="relative">
-              <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <LockOpenIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="password"
                 name="confirmPassword"
