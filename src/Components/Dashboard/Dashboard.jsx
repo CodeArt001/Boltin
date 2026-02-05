@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen flex flex-col w-full lg:mt-6 mt-[1.6rem] dark:text-white lg:pl-6">
       <div className="shadow-md -mt-4">
-        <DashboardBar />
+        <DashboardBar text="Dashboard" />
       </div>
       <div className="md:mt-10 mt-0 lg:mt-0">
         <OverviewCard />
