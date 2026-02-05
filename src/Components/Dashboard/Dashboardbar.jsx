@@ -2,7 +2,7 @@ import Dashboardsearch from "./Dashboardsearch";
 import notifyIcon from "../../assets/images/notification (2).png";
 import { useNavigate } from "react-router-dom";
 
-const DashboardBar = ({ text = "Dashboard", textClassName }) => {
+const Dashboardbar = ({ text = "Dashboard", textClassName }) => {
   const navigate = useNavigate();
   const handleNotifcation = () => {
     navigate("/notifications");
@@ -45,4 +45,4 @@ const DashboardBar = ({ text = "Dashboard", textClassName }) => {
   );
 };
 
-export default DashboardBar;
+export default Dashboardbar;

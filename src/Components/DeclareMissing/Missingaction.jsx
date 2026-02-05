@@ -4,7 +4,7 @@ import mark from "../../assets/images/success.png";
 import barcode from "../../assets/images/code.png";
 // import Dashboardbar from "../Dashboard/DashboardBar";
 import { useNavigate } from "react-router-dom";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Missingaction = () => {
   const navigate = useNavigate();

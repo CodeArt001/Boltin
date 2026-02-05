@@ -7,7 +7,7 @@ import camera4 from "../../assets/images/Ellipsesss.png";
 import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
 import DeviceButtons from "./Devicebuttons";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const MissingDevice = () => {
   const navigate = useNavigate();

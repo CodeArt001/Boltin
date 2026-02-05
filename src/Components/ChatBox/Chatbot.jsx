@@ -2,7 +2,7 @@ import Sender from "./Sender";
 import Receiver from "./Receiver";
 import Messageinput from "./Messageinput";
 import { useEffect, useRef, useState } from "react";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);

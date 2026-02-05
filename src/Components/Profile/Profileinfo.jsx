@@ -4,7 +4,7 @@ import Accountsecurity from "../Settings/Accountsecurity";
 import Editprofile from "../Settings/Editprofile";
 import Profilechanges from "./Profilechanges";
 import { useLocation } from "react-router-dom";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Profileinfo = () => {
   const location = useLocation();

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Accountname from "./Accountname";
 
 import Notificationsettings from "./Notificationsettings";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Settings = () => {
   const [activeTab, setActiveTab] = useState("account-settings");

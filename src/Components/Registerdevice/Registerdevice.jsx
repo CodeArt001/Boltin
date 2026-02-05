@@ -3,7 +3,7 @@ import Registerinfo from "./Registerinfo";
 // import Dashboardbar from "../Dashboard/DashboardBar";
 import Registerupload from "./Registerupload";
 import { useNavigate } from "react-router-dom";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Registerdevice = () => {
   const navigate = useNavigate();

@@ -3,7 +3,7 @@ import camera from "../../assets/images/Ellipse.png";
 import mark from "../../assets/images/success.png";
 import barcode from "../../assets/images/code.png";
 import { useNavigate } from "react-router-dom";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Request = () => {
   const navigate = useNavigate();

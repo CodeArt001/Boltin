@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import camera from "../../assets/images/Ellipse.png";
 import Upload from "../Registerdevice/Upload";
 import { useNavigate } from "react-router-dom";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Stolenupload = () => {
   const [selectedDevice, setSelectedDevice] = useState(null);

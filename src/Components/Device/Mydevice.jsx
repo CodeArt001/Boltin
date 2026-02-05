@@ -8,7 +8,7 @@ import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
 import DeviceButtons from "./Devicebuttons";
 import Devicetable from "../Dashboard/Devicetable";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Mydevice = () => {
   const [viewMode, setViewMode] = useState("grid");

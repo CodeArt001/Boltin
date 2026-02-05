@@ -2,7 +2,7 @@ import Notificationactivity from "./Notificationactivity";
 import Securitylogins from "./Securitylogins";
 import Ownershiptf from "./Ownershiptf";
 import { useState } from "react";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Notifications = () => {
   const [activeTab, setActiveTab] = useState("activity");

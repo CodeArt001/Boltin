@@ -1,4 +1,4 @@
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Transferhistory = () => {
   return (

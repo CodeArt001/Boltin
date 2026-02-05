@@ -1,6 +1,6 @@
 import chatBox from "../../assets/images/chat.png";
 import { useLocation, useNavigate } from "react-router-dom";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Complete = () => {
   const navigate = useNavigate();

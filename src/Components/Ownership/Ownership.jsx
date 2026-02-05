@@ -1,7 +1,7 @@
 import camera from "../../assets/images/Ellipse.png";
 import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
-import DashboardBar from "../Dashboard/DashboardBar";
+import DashboardBar from "../Dashboard/Dashboardbar";
 
 const Ownership = () => {
   const navigate = useNavigate();
