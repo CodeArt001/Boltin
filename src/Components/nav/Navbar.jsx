@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import Themetoggle from "../ThemeToggle";
+import ThemeToggle from "../ThemeToggle";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -44,8 +44,7 @@ const Navbar = () => {
             Get Started
           </button>
 
-          {/* <ThemeToggle /> */}
-          <Themetoggle />
+          <ThemeToggle />
         </div>
         <button
           onClick={() => setIsOpen(!isOpen)}
