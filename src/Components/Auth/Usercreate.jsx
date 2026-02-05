@@ -1,10 +1,4 @@
-import {
-  MailIcon,
-  User2,
-  PhoneCall,
-  LockIcon,
-  LockOpenIcon,
-} from "lucide-react";
+import { Mail, User2, PhoneCall, Lock, LockKeyholeOpen } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Usercreate = () => {
@@ -14,7 +8,7 @@ const Usercreate = () => {
   };
   return (
     <div className="min-h-screen h-[80%] bg-white dark:bg-black flex items-center justify-center shadow shadow-black/30 ">
-      <div className="w-full   rounded-2xl p-8">
+      <div className="w-full rounded-2xl p-8">
         <h1 className=" text-3xl font-semibold text-center font-space mt-6">
           Create Account
         </h1>
@@ -26,7 +20,7 @@ const Usercreate = () => {
               Full Name
             </label>
             <div className="relative">
-              <User2 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <User2 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white w-5 h-5" />
               <input
                 type="text"
                 name="fullName"
@@ -44,7 +38,7 @@ const Usercreate = () => {
               Email Address
             </label>
             <div className="relative">
-              <MailIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white w-5 h-5" />
               <input
                 type="email"
                 name="email"
@@ -62,7 +56,7 @@ const Usercreate = () => {
               Phone Number
             </label>
             <div className="relative">
-              <PhoneCall className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <PhoneCall className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white w-5 h-5" />
               <input
                 type="tel"
                 name="phone"
@@ -80,7 +74,7 @@ const Usercreate = () => {
               Password
             </label>
             <div className="relative">
-              <LockIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="password"
                 name="password"
@@ -98,7 +92,7 @@ const Usercreate = () => {
               Confirm Password
             </label>
             <div className="relative">
-              <LockOpenIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <LockKeyholeOpen className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white w-5 h-5" />
               <input
                 type="password"
                 name="confirmPassword"
