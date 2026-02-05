@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-// import Dashboardbar from "../Dashboard/DashboardBar";
 import camera from "../../assets/images/Ellipse.png";
 import Upload from "../Registerdevice/Upload";
 import { useNavigate } from "react-router-dom";

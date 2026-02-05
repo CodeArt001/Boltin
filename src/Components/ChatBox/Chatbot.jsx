@@ -1,9 +1,9 @@
-// import Dashboardbar from "../Dashboard/DashboardBar";
 import Sender from "./Sender";
 import Receiver from "./Receiver";
 import Messageinput from "./Messageinput";
 import { useEffect, useRef, useState } from "react";
 import DashboardBar from "../Dashboard/DashboardBar";
+
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [isConnected, setIsConnected] = useState(false);
