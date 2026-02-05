@@ -1,4 +1,4 @@
-import Dashboardbar from "../Dashboard/Dashboardbar";
+import Dashboardbar from "../Dashboard/DashboardBar";
 import Card from "../Dashboard/Card";
 import camera from "../../assets/images/Ellipse.png";
 import camera2 from "../../assets/images/Ellipses.png";

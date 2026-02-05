@@ -1,7 +1,7 @@
 import Card from "./Card";
 import { useNavigate } from "react-router-dom";
 
-const Overviewcard = ({
+const OverviewCard = ({
   buttonClassName = "",
   valueClassName = "",
   textClassName = "",
@@ -41,4 +41,4 @@ const Overviewcard = ({
   );
 };
 
-export default Overviewcard;
+export default OverviewCard;

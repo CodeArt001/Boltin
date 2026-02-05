@@ -1,7 +1,8 @@
 // import React from "react";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import chatBox from "../../assets/images/chat.png";
 import { useLocation, useNavigate } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Complete = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Complete = () => {
   return (
     <div className="h-full bg-white text-black dark:bg-black dark:text-white w-full  lg:pl-6 ">
       <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow-md mt-2">
-        <Dashboardbar
+        <DashboardBar
           text="Transfer Ownership"
           textClassName="md:text-[1.9rem]"
         />

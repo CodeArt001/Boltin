@@ -1,5 +1,5 @@
 import { useState } from "react"; // ✅ Add this import
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import Card from "../Dashboard/Card";
 import camera from "../../assets/images/Ellipse.png";
 import camera2 from "../../assets/images/Ellipses.png";
@@ -9,6 +9,7 @@ import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
 import DeviceButtons from "./Devicebuttons";
 import Devicetable from "../Dashboard/Devicetable";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Mydevice = ({
   title,
@@ -184,7 +185,7 @@ const Mydevice = ({
   return (
     <div className="min-h-screen w-full lg:pl-6 relative">
       <div className="mt-2 shadow-md">
-        <Dashboardbar text="My Device" />
+        <DashboardBar text="My Device" />
       </div>
 
       <div className="mt-4">

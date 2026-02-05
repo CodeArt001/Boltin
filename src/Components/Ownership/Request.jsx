@@ -3,8 +3,9 @@ import chatBox from "../../assets/images/chat.png";
 import camera from "../../assets/images/Ellipse.png";
 import mark from "../../assets/images/success.png";
 import barcode from "../../assets/images/code.png";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import { useNavigate } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 // import { useLocation } from "react-router-dom";
 
 const Request = () => {
@@ -27,7 +28,7 @@ const Request = () => {
   return (
     <div className=" bg-white text-black dark:bg-black dark:text-white h-full w-full  lg:pl-6 ">
       <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow-md mt-2">
-        <Dashboardbar
+        <DashboardBar
           text="Transfer Ownership"
           textClassName="md:text-[1.8rem]"
         />

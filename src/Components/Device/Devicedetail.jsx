@@ -2,7 +2,7 @@ import detailcam from "../../assets/images/CAMERA.png";
 import EDIT from "../../assets/images/edit.png";
 import barcode from "../../assets/images/code.png";
 // import { useNavigate, useParams } from "react-router-dom";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+import Dashboardbar from "../Dashboard/DashboardBar";
 import Document from "./Document";
 import { useState } from "react";
 import Modal from "./Modal";

@@ -42,7 +42,7 @@ const Sidebars = () => {
     },
     // { id: 5, icon: <LuOctagonX />, name: "Declare Stolen", to: "/stolen" },
     {
-      id: 6,
+      id: 5,
       icon: <LuArrowLeftRight />,
       name: "Ownership Transfer",
       to: "/ownership",

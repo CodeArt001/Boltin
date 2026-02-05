@@ -1,9 +1,10 @@
 import { useState } from "react";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import Accountsecurity from "../Settings/Accountsecurity";
 import Editprofile from "../Settings/Editprofile";
 import Profilechanges from "./Profilechanges";
 import { useLocation } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Profileinfo = () => {
   const location = useLocation();
@@ -17,7 +18,7 @@ const Profileinfo = () => {
     <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen w-full">
       <div>
         <div className="shadow-md mt-2">
-          <Dashboardbar text="Profile" />
+          <DashboardBar text="Profile" />
         </div>
       </div>
       <div className="flex justify-between mt-4 md:mt-16 items-center px-3">

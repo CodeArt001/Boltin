@@ -1,7 +1,8 @@
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import camera from "../../assets/images/Ellipse.png";
 import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Stolen = () => {
   const navigate = useNavigate();
@@ -173,7 +174,7 @@ const Stolen = () => {
   return (
     <div className="bg-white text-black  dark:bg-black dark:text-white min-h-screen w-full  lg:pl-6 relative">
       <div className="shadow-md mt-2">
-        <Dashboardbar text="Declare Stolen" />
+        <DashboardBar text="Declare Stolen" />
       </div>
       <h1 className=" py-4 text-3xl font-bold">Select Device to continue</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-5 lg:pr-14 xl:pr-14 items-center justify-center py-5 relative">

@@ -3,8 +3,9 @@ import chatBox from "../../assets/images/chat.png";
 import camera from "../../assets/images/Ellipse.png";
 import mark from "../../assets/images/success.png";
 import barcode from "../../assets/images/code.png";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import { useNavigate } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Stolenaction = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Stolenaction = () => {
   return (
     <div className=" bg-white text-black dark:text-white dark:bg-black w-full lg:pl-6 ">
       <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow-md mt-2">
-        <Dashboardbar text="Declare Stolen" />
+        <DashboardBar text="Declare Stolen" />
       </div>
       <div className="lg:flex xl:flex items-center justify-between flex-col sm:flex-col md:flex">
         <div></div>

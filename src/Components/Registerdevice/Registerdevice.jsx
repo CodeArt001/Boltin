@@ -1,8 +1,9 @@
-import React from "react";
+// import React from "react";
 import Registerinfo from "./Registerinfo";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import Registerupload from "./Registerupload";
 import { useNavigate } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Registerdevice = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const Registerdevice = () => {
   return (
     <div className="bg-white dark:bg-black xl:pl-6  min-h-screen w-full  lg:pl-6">
       <div className="shadow-md mt-2">
-        <Dashboardbar text="Register Device" />
+        <DashboardBar text="Register Device" />
       </div>
       <div className="gap-10 items-center xl:flex-row lg:flex-row flex-col sm:flex-col md:px-2 xl:px-0 lg:px-0 lg:w-[50%] place-self-center">
         <Registerinfo />

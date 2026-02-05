@@ -2,8 +2,9 @@ import chatBox from "../../assets/images/chat.png";
 import camera from "../../assets/images/Ellipse.png";
 import mark from "../../assets/images/success.png";
 import barcode from "../../assets/images/code.png";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import { useNavigate } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Missingaction = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Missingaction = () => {
   return (
     <div className=" bg-white text-black dark:bg-black dark:text-white h-full w-full lg:pl-6">
       <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow-md mt-2">
-        <Dashboardbar text="Declare Missing" />
+        <DashboardBar text="Declare Missing" />
       </div>
       <div className="flex-col sm:flex-col lg:flex xl:flex items-center justify-between ">
         <div></div>

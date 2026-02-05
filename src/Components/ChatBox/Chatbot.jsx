@@ -1,4 +1,4 @@
-import Dashboardbar from "../Dashboard/Dashboardbar";
+import Dashboardbar from "../Dashboard/DashboardBar";
 import Sender from "./Sender";
 import Receiver from "./Receiver";
 import Messageinput from "./Messageinput";

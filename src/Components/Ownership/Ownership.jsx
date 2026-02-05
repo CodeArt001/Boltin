@@ -1,8 +1,9 @@
 // import React from "react";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import camera from "../../assets/images/Ellipse.png";
 import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Ownership = () => {
   const navigate = useNavigate();
@@ -174,7 +175,7 @@ const Ownership = () => {
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white  min-h-screen w-full  lg:pl-6 relative">
       <div className="shadow-md mt-2">
-        <Dashboardbar
+        <DashboardBar
           text="Transfer Ownership"
           textClassName="md:text-[1.8rem]"
         />

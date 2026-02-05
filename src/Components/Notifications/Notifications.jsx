@@ -2,14 +2,15 @@ import Notificationactivity from "./Notificationactivity";
 import Securitylogins from "./Securitylogins";
 import Ownershiptf from "./Ownershiptf";
 import { useState } from "react";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+import DashboardBar from "../Dashboard/DashboardBar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 
 const Notifications = () => {
   const [activeTab, setActiveTab] = useState("activity");
   return (
     <div className=" bg-white text-black dark:bg-black dark:text-white min-h-screen w-full  lg:pl-6">
       <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow-md mt-2">
-        <Dashboardbar text="Notifications" />
+        <DashboardBar text="Notifications" />
       </div>
       <div className=" flex flex-row gap-3 justify-between lg:pr-14 xl:pr-14 pr-0 sm:pr-0 lg:px-0 xl:px-0 px-3 py-5 md:mt-13">
         <div

@@ -1,4 +1,4 @@
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import Card from "../Dashboard/Card";
 import camera from "../../assets/images/Ellipse.png";
 import camera2 from "../../assets/images/Ellipses.png";
@@ -7,6 +7,7 @@ import camera4 from "../../assets/images/Ellipsesss.png";
 import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
 import DeviceButtons from "./Devicebuttons";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const ActiveDevice = () => {
   const navigate = useNavigate();
@@ -179,7 +180,7 @@ const ActiveDevice = () => {
   return (
     <div className="min-h-screen w-full lg:pl-6 relative">
       <div className="mt-2 shadow shadow-black/30">
-        <Dashboardbar text="My Device" />
+        <DashboardBar text="My Device" />
       </div>
       <div className="mt-3">
         <DeviceButtons />

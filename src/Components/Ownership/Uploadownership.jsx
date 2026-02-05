@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+// import Dashboardbar from "../Dashboard/DashboardBar";
 import camera from "../../assets/images/Ellipse.png";
 import Upload from "../Registerdevice/Upload";
 import { useNavigate } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Uploadownership = () => {
   const [selectedDevice, setSelectedDevice] = useState(null);
@@ -27,7 +28,7 @@ const Uploadownership = () => {
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white h-full w-full lg:pl-6">
       <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow-md mt-2">
-        <Dashboardbar
+        <DashboardBar
           text="Transfer Onwership"
           textClassName="md:text-[1.8rem]"
         />

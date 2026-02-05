@@ -3,9 +3,10 @@
 import camera from "../../assets/images/Ellipse.png";
 import mark from "../../assets/images/success.png";
 import barcode from "../../assets/images/code.png";
-import Dashboardbar from "../Dashboard/Dashboardbar";
+import Dashboardbar from "../Dashboard/DashboardBar";
 import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
+import DashboardBar from "../Dashboard/DashboardBar";
 
 const Registersuccessful = () => {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ const Registersuccessful = () => {
   return (
     <div className=" bg-white h-full">
       <div className="shadow-md mt-2">
-        <Dashboardbar text="Register Device" />
+        <DashboardBar text="Register Device" />
       </div>
       <div className="flex items-center justify-between">
         <div></div>
