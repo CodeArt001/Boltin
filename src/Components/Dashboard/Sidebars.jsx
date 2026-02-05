@@ -6,7 +6,7 @@ import { MdGridView } from "react-icons/md";
 import { MdOutlineDevices } from "react-icons/md";
 import { TbDeviceDesktopPlus } from "react-icons/tb";
 import { FiAlertTriangle } from "react-icons/fi";
-import { LuOctagonX } from "react-icons/lu";
+// import { LuOctagonX } from "react-icons/lu";
 import { LuArrowLeftRight } from "react-icons/lu";
 import { CgProfile } from "react-icons/cg";
 import { LuHistory } from "react-icons/lu";
@@ -68,7 +68,7 @@ const Sidebars = () => {
     <>
       <button
         onClick={toggleMobileMenu}
-        className="lg:hidden absolute right-3 top-3 md:top-20 md:right-0 md:mr-[1rem] z-50 p-2 bg-[#6C5CE7] text-black rounded-md shadow-lg "
+        className="lg:hidden absolute right-3 top-3 md:top-20 md:right-0 md:mr-4 z-50 p-2 bg-[#6C5CE7] text-black rounded-md shadow-lg "
         aria-label="Toggle menu"
       >
         {isMobileMenuOpen ? (

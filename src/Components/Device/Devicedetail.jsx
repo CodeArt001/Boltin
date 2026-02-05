@@ -45,11 +45,11 @@ const Devicedetail = () => {
   };
 
   return (
-    <div className="bg-white text-white dark:bg-black dark:text-white h-full w-full  lg:pl-6">
-      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow shadow-black/30 mt-2">
+    <div className="bg-white text-white dark:bg-black dark:text-white h-full w-full lg:pl-6">
+      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2  mt-2">
         <Dashboardbar text={` ${deviceData.name}`} />
       </div>
-      <div className="flex items-start justify-between xl:mt-6 lg:mt-6 md:mt-18 mt-6">
+      <div className="flex items-start justify-between xl:mt-6 lg:mt-6 md:mt-18 mt-6 ">
         <div></div>
 
         <div className="flex flex-col items-center justify-center ">
@@ -64,13 +64,13 @@ const Devicedetail = () => {
         <div className="lg:pr-14 md:pr-3">
           <button
             onClick={handleRemove}
-            className="bg-[#E50914] px-8 py-2  rounded-lg "
+            className="bg-[#E50914] px-8 py-2 rounded-lg  "
           >
             Remove
           </button>
         </div>
       </div>
-      <div className="lg:flex xl:flex md:flex-row md:px-3 flex flex-start gap-4 justify-between items-center py-5 text-black dark:text-white">
+      <div className="lg:flex xl:flex md:flex-row md:px-3 flex flex-start gap-4 justify-between items-center py-5 text-black dark:text-white lg:px-0 px-2">
         <div className=" flex flex-col justify-center items-start">
           <div className="text-xs lg:text-[1rem] md:text-[1rem]">
             <h1>Device Name: {deviceData.category}</h1>

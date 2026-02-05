@@ -11,19 +11,7 @@ import DeviceButtons from "./Devicebuttons";
 import Devicetable from "../Dashboard/Devicetable";
 import DashboardBar from "../Dashboard/DashboardBar";
 
-const Mydevice = ({
-  title,
-  textClassName = "",
-  image,
-  imageClass = "",
-  onClick,
-  buttonText,
-  category,
-  model,
-  active,
-  className = "",
-  cardHeight = "",
-}) => {
+const Mydevice = () => {
   const [viewMode, setViewMode] = useState("grid");
   const navigate = useNavigate();
 
@@ -184,7 +172,7 @@ const Mydevice = ({
 
   return (
     <div className="min-h-screen w-full lg:pl-6 relative">
-      <div className="mt-2 shadow-md">
+      <div className="mt-2 shadow-md lg:px-0 px-5">
         <DashboardBar text="My Device" />
       </div>
 
@@ -194,7 +182,7 @@ const Mydevice = ({
 
       <div className="mt-5 md:mt-10">
         {viewMode === "grid" ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-5 lg:pr-14 xl:pr-14 items-center justify-center py-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:px-0 px-5 lg:gap-10 gap-5 lg:pr-14 xl:pr-14 items-center justify-center py-5">
             {deviceCards.map((cards) => (
               <Card
                 key={cards.id}
@@ -227,7 +215,7 @@ const Mydevice = ({
 
           <div className="lg:pr-10 xl:pr-10 bottom-10 right-10 flex flex-col items-center z-50 fixed">
             <img src={chatBox} alt="chatBox-image" />
-            <p className="text-white">chatBox</p>
+            <p className="">chatBox</p>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ const Accountsecurity = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="relative flex  justify-between items-center text-black dark:text-white relative ">
+      <div className="relative flex  justify-between items-center text-black dark:text-white">
         <div></div>
 
         <div className="flex flex-col items-center justify-center">
@@ -29,7 +29,7 @@ const Accountsecurity = () => {
             <p>Paul</p>
           </div>
           <div className="flex flex-col text-black dark:text-white relative items-center">
-            <div className="  border border-black dark:border-white rounded-lg py-3 lg:w-[25rem] w-[23rem] md:w-[45rem]  pl-3">
+            <div className="  border border-black dark:border-white rounded-lg py-3 lg:w-100 w-92 md:w-180  pl-3">
               Change Password
             </div>
 
@@ -46,7 +46,7 @@ const Accountsecurity = () => {
 
             {enterPassword && (
               <div className="py-5 flex flex-col justify-center items-center ">
-                <div className="text-black border border-black dark:text-white dark:border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem]">
+                <div className="text-black border border-black dark:text-white dark:border-white py-3 pl-3 rounded-lg lg:w-100 w-92 md:w-180">
                   Enter last password
                 </div>
 
@@ -61,13 +61,13 @@ const Accountsecurity = () => {
 
                 {comfirmPassword && (
                   <div className="flex flex-col items-center gap-2">
-                    <div className=" mt-3 text-black border border-black dark:text-white dark:border-white py-3 pl-3 rounded-lg lg:w-[25rem] w-[23rem] md:w-[45rem] ">
+                    <div className=" mt-3 text-black border border-black dark:text-white dark:border-white py-3 pl-3 rounded-lg lg:w-100 w-92 md:w-180 ">
                       Comfirm new passworld
                       <div />
                     </div>
                     <button
                       onClick={handleSuccessful}
-                      className="bg-[#6C5CE7] hover:bg-[#6C5CE7] text-white px-14 py-2 rounded  mt-2"
+                      className="bg-[#6C5CE7] hover:bg-[#6C5CE7] text-white px-14 py-2 rounded mt-2"
                     >
                       Comfirm
                     </button>
@@ -75,7 +75,7 @@ const Accountsecurity = () => {
                 )}
 
                 {passwordSuccessfull && (
-                  <div className="absolute -top-[2rem]   flex items-center justify-center z-50">
+                  <div className="absolute -top-8 flex items-center justify-center z-50">
                     <Passwordsuccsseful />
                   </div>
                 )}

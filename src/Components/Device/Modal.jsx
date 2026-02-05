@@ -1,7 +1,7 @@
 const Modal = ({ onClose, onConfirm }) => {
   return (
-    <div className=" relative inset-0 bg-black bg-transparent flex items-center justify-center z-50  ">
-      <div className="border border-white bg-[#18181b] border-t-gray-600  items-center  w-100 h-55 rounded-2xl px-10 flex flex-col justify-center lg:right-[28rem] lg:bottom-[20rem] md:bottom-[35rem] bottom-[38rem] absolute">
+    <div className=" relative inset-0  bg-transparent flex items-center justify-center z-50  ">
+      <div className="border border-white bg-[#18181b] border-t-gray-600  items-center  w-100 h-55 rounded-2xl px-10 flex flex-col justify-center lg:right-112 lg:bottom-80 md:bottom-140 bottom-152 absolute">
         <h1 className="w-45 text-center text-white ">
           Are you sure you want to remove this device ?
         </h1>

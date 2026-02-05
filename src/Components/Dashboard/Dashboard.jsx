@@ -5,7 +5,7 @@ import OverviewCardd from "./DashboardActivity/OverviewCardd";
 
 const Dashboard = () => {
   return (
-    <div className="min-h-screen flex flex-col w-full lg:mt-[1.5rem] mt-[1.6rem] dark:text-white lg:pl-6">
+    <div className="min-h-screen flex flex-col w-full lg:mt-6 mt-[1.6rem] dark:text-white lg:pl-6">
       <div className="shadow-md -mt-4">
         <DashboardBar />
       </div>

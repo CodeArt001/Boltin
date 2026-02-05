@@ -9,7 +9,7 @@ const DeviceButtons = ({ viewMode, setViewMode }) => {
   const missingDevice = location.pathname === "/missing-device";
   const stolenDevice = location.pathname === "/stolen-device";
 
-  const handleAllDevice = ({}) => {
+  const handleAllDevice = () => {
     navigate("/mydevice");
   };
   const handleActiveDevice = () => {
@@ -22,7 +22,7 @@ const DeviceButtons = ({ viewMode, setViewMode }) => {
     navigate("/stolen-device");
   };
   return (
-    <div className="flex justify-between gap-4">
+    <div className="flex flex-col lg:flex-row md:flex-row justify-between gap-4 lg:px-0 px-4">
       <div className="flex gap-4">
         <button
           onClick={handleAllDevice}

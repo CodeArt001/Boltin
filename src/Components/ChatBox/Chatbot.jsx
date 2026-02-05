@@ -168,7 +168,7 @@ const Chatbot = () => {
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="fixed bottom-0  p-4  right-0 left-0 lg:left-[256px] shrink-0">
+      <div className="fixed bottom-0  p-4  right-0 left-0 lg:left-64 shrink-0">
         <Messageinput
           onSendMessage={handleSendMessage}
           isConnected={isConnected}

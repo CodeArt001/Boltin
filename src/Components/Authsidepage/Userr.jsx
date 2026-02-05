@@ -9,14 +9,14 @@ const Userr = () => {
         <img
           src={system}
           alt=""
-          className="opacity-50 w-full lg:h-full lg:w-[55rem] h-[65vh] md:h-[65vh]"
+          className="opacity-50 w-full lg:h-full lg:w-220 h-[65vh] md:h-[65vh]"
         />
         <div className="">
-          <p className="text-black dark:text-white text-5xl absolute lg:top-[10rem] lg:right-[35rem] md:bottom-[40rem] bottom-[23rem] m-4 font-space">
+          <p className="text-black dark:text-white text-5xl absolute lg:top-40 lg:right-140 md:bottom-160 bottom-92 m-4 font-space">
             Boltin
           </p>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-            <h1 className="text-4xl font-bold font-space text-black dark:text-white lg:w-[35rem] md:w-full lg:px-0 md:px-0 px-5">
+            <h1 className="text-4xl font-bold font-space text-black dark:text-white lg:w-140 md:w-full lg:px-0 md:px-0 px-5">
               Welcome back to Boltin.
             </h1>
             <p className="text-black dark:text-white text-center text-sm font-inter lg:w-[20rem] lg:px-0 md:px-0 px-5">
@@ -24,7 +24,7 @@ const Userr = () => {
               records.
             </p>
           </div>
-          <div className="absolute lg:bottom-45 bottom-10 lg:right-[30rem] flex flex-col md:px-9 lg:px-0 px-6">
+          <div className="absolute lg:bottom-45 bottom-10 lg:right-120 flex flex-col md:px-9 lg:px-0 px-6">
             <div className="relative flex items-center gap-3 mt-5">
               <img src={marked} alt="" />
               <p className="text-black dark:text-white">Privacy assured</p>

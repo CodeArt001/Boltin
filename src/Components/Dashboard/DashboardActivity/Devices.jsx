@@ -2,22 +2,7 @@ import Card from "../Card";
 import camera from "../../../assets/images/Ellipse.png";
 import { useNavigate } from "react-router-dom";
 
-const Devices = ({
-  title,
-  textClassName = "",
-  image,
-  imageClass = "",
-  onClick,
-  buttonText,
-  category,
-  categoryClassName = "",
-  model,
-  modelClassName = "",
-  active,
-  activeclassName = "",
-  className = "",
-  cardHeight = "",
-}) => {
+const Devices = () => {
   const navigate = useNavigate();
   const handleViewDetails = () => {
     navigate("/device-detail");

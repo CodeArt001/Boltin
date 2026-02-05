@@ -73,7 +73,7 @@ const Editprofile = () => {
               <input
                 type="text"
                 placeholder="enter ID: Paul"
-                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg  shadow shadow-black/30 dark:border-white lg:w-[25rem] w-[23rem] md:w-[45rem] pl-3"
+                className="placeholder:text-black dark:placeholder:text-white py-3 rounded-lg  shadow shadow-black/30 dark:border-white lg:w-100 w-92 md:w-180 pl-3"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -119,7 +119,7 @@ const Editprofile = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-[25rem] -right-[25rem] flex flex-col items-center ">
+        <div className="absolute top-100 -right-100 flex flex-col items-center ">
           <img src={chatBox} alt="chat" />
           <p className="text-white">chatBox</p>
         </div>

@@ -59,7 +59,9 @@ const Userlogin = () => {
         >
           Login
         </button>
-        <p className="text-center text-white mt-3">Don't have an account? </p>
+        <p className="text-center text-white mt-3">
+          Don`&apos;t have an account?{" "}
+        </p>
       </form>
     </div>
   );

@@ -11,7 +11,7 @@ const DeviceIcon = ({ viewMode, setViewMode }) => {
   //     navigate("/device-table");
   //   };
   return (
-    <div className="flex gap-4 ">
+    <div className="flex lg:flex-row flex-col gap-4 items-start">
       <button
         onClick={() => setViewMode("table")}
         className={`p-2 border-2 border-[#94eed2] rounded-lg transition-colors ${viewMode === "table" ? "bg-[#1F7A5A] text-white" : "border border-[#1F7A5A]"}`}

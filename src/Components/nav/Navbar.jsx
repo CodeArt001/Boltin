@@ -55,7 +55,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <>
-          <div className="lg:hidden font-inter fixed top-[80px] left-0 w-[60%] md:w-[100%] bg-black   text-white  border-b rounded-lg shadow-lg z-50 animate-in slide-in-from-top flex md:text-center md:text-center justify-center">
+          <div className="lg:hidden font-inter fixed top-[20] left-0 w-[60%] md:w-[full] bg-black   text-white  border-b rounded-lg shadow-lg z-50 animate-in slide-in-from-top flex md:text-center justify-center">
             <ul className="flex flex-col p-6 gap-4 md:gap-6 ">
               {navLinks.map((link) => (
                 <li key={link.name}>
