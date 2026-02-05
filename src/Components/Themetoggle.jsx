@@ -1,6 +1,6 @@
 import { useTheme } from "./ThemeContext.jsx";
 
-const ThemeToggle = () => {
+const Themetoggle = () => {
   const { theme, toggleTheme } = useTheme();
   return (
     <div>
@@ -45,4 +45,4 @@ const ThemeToggle = () => {
   );
 };
 
-export default ThemeToggle;
+export default Themetoggle;

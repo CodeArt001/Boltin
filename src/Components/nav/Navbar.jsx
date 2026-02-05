@@ -44,6 +44,7 @@ const Navbar = () => {
             Get Started
           </button>
 
+          {/* <ThemeToggle /> */}
           <ThemeToggle />
         </div>
         <button
