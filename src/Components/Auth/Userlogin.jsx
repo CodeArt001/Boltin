@@ -1,4 +1,4 @@
-import { User, Lock } from "lucide-react";
+import { User, Lock, User2, LockIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Userlogin = () => {
@@ -18,7 +18,7 @@ const Userlogin = () => {
             User ID
           </label>
           <div className="relative mt-3">
-            <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5  " />
+            <User2 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5  " />
             <input
               type="text"
               placeholder="enter user ID"
@@ -31,7 +31,7 @@ const Userlogin = () => {
             Password
           </label>
           <div className="relative mt-3">
-            <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5  " />
+            <LockIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5  " />
             <input
               type="text"
               placeholder="enter password (must be 8 characters long)"
