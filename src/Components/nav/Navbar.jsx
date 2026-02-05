@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import ThemeToggle from "../nav/ThemeToggle";
+import ThemeToggle from "./ThemeToggle.jsx";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
