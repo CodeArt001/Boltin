@@ -2,7 +2,6 @@ import Activities from "./DashboardActivity/Activities";
 import Devicetable from "./Devicetable";
 import OverviewCard from "./DashboardActivity/OverviewCard";
 import DashboardBar from "./DashboardBar";
-// import DashboardBar from "./DashboardBar";
 
 const Dashboard = () => {
   return (
