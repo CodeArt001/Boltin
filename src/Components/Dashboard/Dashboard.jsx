@@ -8,12 +8,9 @@ import Devicetable from "./Devicetable";
 const Dashboard = () => {
   return (
     <div className="min-h-screen flex flex-col w-full lg:mt-[1.5rem] mt-[1.6rem] dark:text-white lg:pl-6">
-      <div className="">
-        <div className="shadow shadow-black/30 -mt-4">
-          <Dashboardbar />
-        </div>
+      <div className="shadow-md -mt-4">
+        <Dashboardbar />
       </div>
-
       <div className="md:mt-10 mt-0 lg:mt-0">
         <Overviewcardd />
       </div>

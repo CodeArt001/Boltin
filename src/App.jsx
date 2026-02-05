@@ -27,6 +27,10 @@ import { Suspense } from "react";
 import DashboardLoadingSkeleton from "./Components/Dashboard/DashboardLoadingSkeleton";
 import Chatbot from "./Components/ChatBox/Chatbot";
 import Transferhistory from "./Components/Ownership/Transferhistory";
+import ActiveDevice from "./Components/Device/ActiveDevice";
+import MissingDevice from "./Components/Device/MissingDevice";
+import StolenDevice from "./Components/Device/StolenDevice";
+import Devicetable from "./Components/Dashboard/Devicetable";
 
 function App() {
   const location = useLocation();
@@ -55,6 +59,10 @@ function App() {
     "/account-security",
     "/edit-profile",
     "/transfer-history",
+    "/active-device",
+    "/missing-device",
+    "/stolen-device",
+    "/device-table",
   ];
   const isDashboardRoute = dashboardRoutes.some((route) =>
     location.pathname.startsWith(route),
@@ -63,7 +71,6 @@ function App() {
     !location.pathname.includes("/users") &&
     !location.pathname.includes("/userr") &&
     !location.pathname.includes("/registersuccessful") &&
-    // !location.pathname.includes("/notification-activity") &&
     !isDashboardRoute;
   return (
     <>
@@ -122,6 +129,10 @@ function App() {
                     path="/transfer-history"
                     element={<Transferhistory />}
                   />
+                  <Route path="/active-device" element={<ActiveDevice />} />
+                  <Route path="/missing-device" element={<MissingDevice />} />
+                  <Route path="/stolen-device" element={<StolenDevice />} />
+                  <Route path="/device-table" element={<Devicetable />} />
                 </Routes>
               </Suspense>
             </main>
@@ -129,7 +140,6 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/our-features" element={<Featurecard />} /> */}
             <Route path="/users" element={<Users />} />
             <Route path="/userr" element={<Userr />} />
           </Routes>

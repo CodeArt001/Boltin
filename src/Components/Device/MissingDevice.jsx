@@ -1,15 +1,20 @@
-// import React from "react";
 import Dashboardbar from "../Dashboard/Dashboardbar";
+import Card from "../Dashboard/Card";
 import camera from "../../assets/images/Ellipse.png";
+import camera2 from "../../assets/images/Ellipses.png";
+import camera3 from "../../assets/images/Ellipsess.png";
+import camera4 from "../../assets/images/Ellipsesss.png";
 import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
+import DeviceButtons from "./Devicebuttons";
 
-const Ownership = () => {
+const MissingDevice = () => {
   const navigate = useNavigate();
-  const handleCardClick = (deviceId) => {
-    navigate("/upload-ownership", { state: { deviceId } });
+
+  const handleViewDevice = (deviceId) => {
+    navigate(`/device-detail/${deviceId}`);
   };
-  const stolenCards = [
+  const deviceCards = [
     {
       id: 1,
       img: camera,
@@ -17,37 +22,37 @@ const Ownership = () => {
       category: "Category: Camera",
       model: "IMEI/MAC: 22-09-08",
 
-      active: "Status:Active",
+      active: "Status: Missing",
       buttonText: "View ",
     },
     {
       id: 2,
-      img: camera,
+      img: camera2,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
       model: "IMEI/MAC: 22-09-08",
 
-      active: "Status: Active",
+      active: "Status: Missing",
       buttonText: "View ",
     },
     {
       id: 3,
-      img: camera,
+      img: camera3,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
       model: "IMEI/MAC: 22-09-08",
 
-      active: "Status: Active",
+      active: "Status: Missing",
       buttonText: "View ",
     },
     {
-      id: 3,
-      img: camera,
+      id: 4,
+      img: camera4,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
       model: "IMEI/MAC: 22-09-08",
 
-      active: "Status: Active",
+      active: "Status: Missing",
       buttonText: "View ",
     },
     {
@@ -62,6 +67,36 @@ const Ownership = () => {
     },
     {
       id: 6,
+      img: camera2,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 7,
+      img: camera3,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 8,
+      img: camera4,
+      title: "Device Name: Sony 224",
+      category: "Category: Camera",
+      model: "IMEI/MAC: 22-09-08",
+
+      active: "Status: Missing",
+      buttonText: "View ",
+    },
+    {
+      id: 9,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -71,8 +106,8 @@ const Ownership = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
-      img: camera,
+      id: 10,
+      img: camera2,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
       model: "IMEI/MAC: 22-09-08",
@@ -81,8 +116,8 @@ const Ownership = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
-      img: camera,
+      id: 11,
+      img: camera3,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
       model: "IMEI/MAC: 22-09-08",
@@ -91,8 +126,8 @@ const Ownership = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
-      img: camera,
+      id: 12,
+      img: camera4,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
       model: "IMEI/MAC: 22-09-08",
@@ -101,67 +136,7 @@ const Ownership = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
-      img: camera,
-      title: "Device Name: Sony 224",
-      category: "Category: Camera",
-      model: "IMEI/MAC: 22-09-08",
-
-      active: "Status: Missing",
-      buttonText: "View ",
-    },
-    {
-      id: 6,
-      img: camera,
-      title: "Device Name: Sony 224",
-      category: "Category: Camera",
-      model: "IMEI/MAC: 22-09-08",
-
-      active: "Status: Missing",
-      buttonText: "View ",
-    },
-    {
-      id: 6,
-      img: camera,
-      title: "Device Name: Sony 224",
-      category: "Category: Camera",
-      model: "IMEI/MAC: 22-09-08",
-
-      active: "Status: Missing",
-      buttonText: "View ",
-    },
-    {
-      id: 6,
-      img: camera,
-      title: "Device Name: Sony 224",
-      category: "Category: Camera",
-      model: "IMEI/MAC: 22-09-08",
-
-      active: "Status: Missing",
-      buttonText: "View ",
-    },
-    {
-      id: 6,
-      img: camera,
-      title: "Device Name: Sony 224",
-      category: "Category: Camera",
-      model: "IMEI/MAC: 22-09-08",
-
-      active: "Status: Missing",
-      buttonText: "View ",
-    },
-    {
-      id: 6,
-      img: camera,
-      title: "Device Name: Sony 224",
-      category: "Category: Camera",
-      model: "IMEI/MAC: 22-09-08",
-
-      active: "Status: Missing",
-      buttonText: "View ",
-    },
-    {
-      id: 6,
+      id: 13,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -172,37 +147,44 @@ const Ownership = () => {
     },
   ];
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white  min-h-screen w-full  lg:pl-6 relative">
-      <div className="shadow-md mt-2">
-        <Dashboardbar
-          text="Transfer Ownership"
-          textClassName="md:text-[1.8rem]"
-        />
+    <div className="min-h-screen w-full lg:pl-6 relative">
+      <div className="mt-2 shadow-md">
+        <Dashboardbar text="My Device" />
       </div>
-      <h1 className="text-white py-4 text-2xl">Select Device to continue</h1>
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-5  lg:pr-14 xl:pr-14 items-center justify-center py-5 relative">
-        {stolenCards.map((cardds, index) => (
-          <div key={index} onClick={() => handleCardClick(cardds.id)}>
-            <div className="shadow shadow-black/30 cursor-pointer flex flex-col items-center justify-center  border border-white rounded-2xl px-4 py-8 ">
-              <img src={cardds.img} alt="camera-img" className="w-8 h-8" />
-              <p>{cardds.title}</p>
-              <p>{cardds.category}</p>
-              <p>{cardds.model}</p>
-              <p>{cardds.active}</p>
+      <div className="mt-3">
+        <DeviceButtons />
+      </div>
+      <div className="mt-5 md:mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-5  lg:pr-14 xl:pr-14 items-center justify-center py-5 ">
+          {deviceCards.map((cards, index) => (
+            <Card
+              key={index}
+              image={cards.img}
+              className="px-0 "
+              imageClass="w-12 h-12"
+              title={cards.title}
+              textClassName="font-semibold"
+              category={cards.category}
+              model={cards.model}
+              active={cards.active}
+              buttonText={cards.buttonText}
+              cardHeight="h-[230px] xl:h-[220px] lg:h-[220px] md:h-[270px]"
+              showViewIcon={false}
+              onClick={() => handleViewDevice(cards.id)}
+            />
+          ))}
+        </div>
+        <div className="flex justify-center items-center mt-5">
+          <div></div>
 
-              <button className="bg-[#1F7A5A] hover:bg-[#1F7A5A] text-white px-14 py-2 rounded   mt-2 ">
-                {cardds.buttonText}
-              </button>
-            </div>
+          <div className="lg:pr-10 xl:pr-10 bottom-10 right-10  flex flex-col items-center z-50 fixed">
+            <img src={chatBox} alt="chatBox-image" />
+            <p className="text-white">chatBox</p>
           </div>
-        ))}
-      </div>
-      <div className="fixed -bottom-9 pr-14 right-0">
-        <img src={chatBox} alt="chat" />
-        <p className="text-white">chatBox</p>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Ownership;
+export default MissingDevice;

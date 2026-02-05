@@ -3,9 +3,7 @@ import camera from "../../assets/images/cam.png";
 const Notificationactivity = () => {
   return (
     <div className="w-full bg-white text-black dark:bg-black dark:text-white h-screen lg:pr-14 xl:pr-14">
-      <div className="flex flex-row items-center justify-between ">
-        {/* <h1 className="text-white text-3xl my-3"> Activity</h1> */}
-      </div>
+      <div className="flex flex-row items-center justify-between "></div>
       <div className="gap-4 flex flex-col">
         <div className="flex justify-between items-center bg-white shadow shadow-black/20 rounded-lg gap-24 px-4 ">
           <div className="flex flex-row items-center gap-3">

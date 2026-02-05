@@ -8,7 +8,7 @@ const Settings = () => {
   const [activeTab, setActiveTab] = useState("account-settings");
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen w-full  md:px-10 lg:pl-6 relative">
-      <div className="mt-2 shadow shadow-black/30">
+      <div className="mt-2 shadow-md">
         <Dashboardbar text="Settings" />
       </div>
       <div className="flex justify-between px-6  cursor-pointer mt-10">

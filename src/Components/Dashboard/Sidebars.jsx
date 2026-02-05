@@ -40,7 +40,7 @@ const Sidebars = () => {
       name: "Declare Missing",
       to: "/missing",
     },
-    { id: 5, icon: <LuOctagonX />, name: "Declare Stolen", to: "/stolen" },
+    // { id: 5, icon: <LuOctagonX />, name: "Declare Stolen", to: "/stolen" },
     {
       id: 6,
       icon: <LuArrowLeftRight />,
@@ -115,7 +115,7 @@ const Sidebars = () => {
         } `}
       >
         <div
-          className={`border border-white dark:border-gray-800 shadow shadow-black/30 min-h-screen bg-white dark:bg-gray-950 w-[280px] sm:w-[300px] md:w-[320px] lg:w-[300px] xl:w-[305px] h-full px-2 z-40 transition-transform duration-300 flex flex-col pt-0
+          className={`border border-white dark:border-gray-800 shadow shadow-black/30 min-h-screen bg-white dark:bg-gray-950 w-[280px] sm:w-[300px] md:w-[320px] lg:w-[310px] xl:w-[315px] h-full px-2 z-40 transition-transform duration-300 flex flex-col pt-0
            `}
         >
           <div className="">

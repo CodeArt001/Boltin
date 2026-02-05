@@ -11,7 +11,7 @@ const Registerdevice = () => {
   };
   return (
     <div className="bg-white dark:bg-black xl:pl-6  min-h-screen w-full  lg:pl-6">
-      <div className="shadow shadow-black/30 mt-2">
+      <div className="shadow-md mt-2">
         <Dashboardbar text="Register Device" />
       </div>
       <div className="gap-10 items-center xl:flex-row lg:flex-row flex-col sm:flex-col md:px-2 xl:px-0 lg:px-0 lg:w-[50%] place-self-center">

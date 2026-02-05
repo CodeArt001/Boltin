@@ -17,9 +17,7 @@ const Accountsecurity = () => {
   const handleSuccessful = () => {
     SetPasswordSuccessful(!passwordSuccessfull);
   };
-  //   if (passwordSuccessfull) {
-  //     return <Passwordsuccsseful />;
-  //   }
+
   return (
     <div className="flex justify-center">
       <div className="relative flex  justify-between items-center text-black dark:text-white relative ">

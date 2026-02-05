@@ -26,7 +26,7 @@ const Registersuccessful = () => {
   ];
   return (
     <div className=" bg-white h-full">
-      <div className="shadow shadow-black/30 mt-2">
+      <div className="shadow-md mt-2">
         <Dashboardbar text="Register Device" />
       </div>
       <div className="flex items-center justify-between">

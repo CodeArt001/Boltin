@@ -3,7 +3,7 @@ import Dashboardbar from "../Dashboard/Dashboardbar";
 const Transferhistory = () => {
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen w-full lg:pl-6 relative">
-      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow shadow-black/30 mt-2">
+      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow-md mt-2">
         <Dashboardbar
           text="Transfer History"
           textClassName="md:text-[1.8rem]"

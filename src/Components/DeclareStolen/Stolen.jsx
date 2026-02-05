@@ -70,7 +70,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 7,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -80,7 +80,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 8,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -90,7 +90,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 9,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -100,7 +100,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 10,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -110,7 +110,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 11,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -120,7 +120,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 12,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -130,7 +130,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 13,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -140,7 +140,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 14,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -150,7 +150,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 15,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -160,7 +160,7 @@ const Stolen = () => {
       buttonText: "View ",
     },
     {
-      id: 6,
+      id: 16,
       img: camera,
       title: "Device Name: Sony 224",
       category: "Category: Camera",
@@ -172,7 +172,7 @@ const Stolen = () => {
   ];
   return (
     <div className="bg-white text-black  dark:bg-black dark:text-white min-h-screen w-full  lg:pl-6 relative">
-      <div className="shadow shadow-black/30 mt-2">
+      <div className="shadow-md mt-2">
         <Dashboardbar text="Declare Stolen" />
       </div>
       <h1 className=" py-4 text-3xl font-bold">Select Device to continue</h1>

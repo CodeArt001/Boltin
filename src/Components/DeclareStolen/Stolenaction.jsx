@@ -25,7 +25,7 @@ const Stolenaction = () => {
   ];
   return (
     <div className=" bg-white text-black dark:text-white dark:bg-black w-full lg:pl-6 ">
-      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow shadow-black/30 mt-2">
+      <div className="lg:py-0 xl:py-0 md:py-0 sm:py-2 py-2 shadow-md mt-2">
         <Dashboardbar text="Declare Stolen" />
       </div>
       <div className="lg:flex xl:flex items-center justify-between flex-col sm:flex-col md:flex">

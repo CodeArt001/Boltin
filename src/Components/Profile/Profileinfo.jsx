@@ -16,7 +16,7 @@ const Profileinfo = () => {
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen w-full">
       <div>
-        <div className="shadow shadow-black/30 mt-2">
+        <div className="shadow-md mt-2">
           <Dashboardbar text="Profile" />
         </div>
       </div>
