@@ -1,12 +1,10 @@
-// import React from "react";
-// import Card from "../Dashboard/Card";
 import camera from "../../assets/images/Ellipse.png";
 import mark from "../../assets/images/success.png";
 import barcode from "../../assets/images/code.png";
-import Dashboardbar from "../Dashboard/DashboardBar";
 import chatBox from "../../assets/images/chat.png";
 import { useNavigate } from "react-router-dom";
 import DashboardBar from "../Dashboard/DashboardBar";
+// import DashboardBar from "../Dashboard/DashboardBar";
 
 const Registersuccessful = () => {
   const navigate = useNavigate();
